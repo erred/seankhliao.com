@@ -4,4 +4,4 @@ steps:
     commands:
       - docker build -t ghcr.io/seankhliao/seankhliao.com .
       - docker push ghcr.io/seankhliao/seankhliao.com
-      - cosign sign --key ~/.ssh/cosign.key ghcr.io/seankhliao/seankhliao.com
+      - COSIGN_PASSWORD= cosign sign --key ~/.ssh/cosign.key ghcr.io/seankhliao/seankhliao.com
