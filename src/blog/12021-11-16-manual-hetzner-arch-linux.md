@@ -2,7 +2,6 @@
 
 ## hand roll all the things, no more install magic
 
-
 ### _manual_ arch install on hetzner
 
 Hetzner's root servers (bare metal servers)

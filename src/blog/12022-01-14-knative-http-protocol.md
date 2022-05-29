@@ -2,7 +2,6 @@
 
 ## http redirects?
 
-
 ### _knative_
 
 So I was testing my shiny new [gRPC](https://grpc.io/)

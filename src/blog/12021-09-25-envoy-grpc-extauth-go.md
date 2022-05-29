@@ -2,7 +2,6 @@
 
 ## pushing auth to the network
 
-
 ### envoy
 
 [envoy](https://www.envoyproxy.io/)

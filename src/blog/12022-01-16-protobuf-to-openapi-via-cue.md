@@ -2,7 +2,6 @@
 
 ## round tripping through cue
 
-
 ### _proto_ to jsonschema / openapi
 
 So you have message definitions declared as

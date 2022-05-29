@@ -2,7 +2,6 @@
 
 ## but there's nothing there?
 
-
 ### _knative_
 
 [knative](https://knative.dev/) is interesting,

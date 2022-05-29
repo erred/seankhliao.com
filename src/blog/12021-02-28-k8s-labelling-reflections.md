@@ -2,7 +2,6 @@
 
 ## reflections on a k8s resource labelling initiative at work
 
-
 ### _kubernetes_ labels
 
 Kubernetes resources all have a `metadata.labels` field,

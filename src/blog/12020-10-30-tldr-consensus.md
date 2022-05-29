@@ -2,7 +2,6 @@
 
 ## consensus isn't that hard
 
-
 ### _consensus_
 
 #### _basic_ paxos

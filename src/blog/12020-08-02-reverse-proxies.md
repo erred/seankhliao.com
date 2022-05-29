@@ -2,7 +2,6 @@
 
 ## notes on reverse proxies
 
-
 ### _reverse_ proxies
 
 _tldr_ use envoy

@@ -2,7 +2,6 @@
 
 ## so many levels of abstraction for container runtimes
 
-
 ### _Container_ Runtimes
 
 So many layers of abstraction.

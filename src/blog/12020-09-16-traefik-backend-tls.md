@@ -2,7 +2,6 @@
 
 ## running TLS to the backend with traefik
 
-
 ### _TLS_ to the backend
 
 Situation: you have traefik as your reverse proxy / API gateway,

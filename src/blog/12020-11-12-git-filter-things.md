@@ -2,7 +2,6 @@
 
 ## the overloaded word filter in git
 
-
 #### _git_ filter-branch
 
 [git-filter-branch](https://git-scm.com/docs/git-filter-branch)

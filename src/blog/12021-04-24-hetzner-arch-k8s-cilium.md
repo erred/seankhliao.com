@@ -2,7 +2,6 @@
 
 ## yay new server
 
-
 ### _new_ server
 
 So new Arch Linux dedicated server from Hetzner.

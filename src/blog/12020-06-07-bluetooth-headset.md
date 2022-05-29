@@ -2,7 +2,6 @@
 
 ## bluetooth headsets and linux don't like each other
 
-
 ### _bluetooth_ headset
 
 So audio (in/out)

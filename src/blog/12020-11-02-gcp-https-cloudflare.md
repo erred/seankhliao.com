@@ -2,7 +2,6 @@
 
 ## HTTPS troubles with GCP and Cloudflare
 
-
 ### _https_
 
 Secure all the things!

@@ -2,7 +2,6 @@
 
 ## extracting partial elements from json
 
-
 ### _json_
 
 You have a JSON shaped problem,

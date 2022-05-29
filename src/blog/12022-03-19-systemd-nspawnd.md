@@ -2,7 +2,6 @@
 
 ## how do you configure the damn thing
 
-
 ### _systemd_-nspawn
 
 So systemd has its own containery thing.

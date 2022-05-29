@@ -2,7 +2,6 @@
 
 ## vanity imports are vain
 
-
 So how do you get `go get your.domain/package` to work?
 
 ### _go get_

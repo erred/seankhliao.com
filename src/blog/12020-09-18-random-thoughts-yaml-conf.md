@@ -2,7 +2,6 @@
 
 ## musing on yaml as a configuration file format
 
-
 ### _yaml_
 
 The internet loves to hate it.

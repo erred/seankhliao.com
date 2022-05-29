@@ -1,7 +1,6 @@
 # systemd-nspawn first impressions
 
-## 
-
+##
 
 ### _systemd-nspawn_
 

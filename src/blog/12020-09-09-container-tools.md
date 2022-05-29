@@ -2,7 +2,6 @@
 
 ## break the docker cli monoculture!
 
-
 #### _tools_
 
 You're tired of the docker monoculture

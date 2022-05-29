@@ -2,7 +2,6 @@
 
 ## how do you properly compare manifest yamls
 
-
 ### _manifests_
 
 Kubernetes manifests most commonly come as YAML,

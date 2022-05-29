@@ -2,7 +2,6 @@
 
 ## reading another spec OpenMetrics
 
-
 ### _OpenMetrics_
 
 [OpenMetrics](https://openmetrics.io/)

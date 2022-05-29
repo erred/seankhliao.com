@@ -2,7 +2,6 @@
 
 ## setting up nat64 and dns64
 
-
 ### _ipv6_
 
 Why can't the world just use ipv6?
@@ -66,10 +65,10 @@ so you need to have a separate network namespace to test it.
 
 ```json
 {
-	"instance": "default",
-	"framework": "netfilter",
-	"global": {
-		"pool6": "64:ff9b::/96"
-	}
+  "instance": "default",
+  "framework": "netfilter",
+  "global": {
+    "pool6": "64:ff9b::/96"
+  }
 }
 ```

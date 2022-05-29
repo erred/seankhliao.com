@@ -2,7 +2,6 @@
 
 ## cutting through more marketing crap
 
-
 ### _ci/cd_
 
 The [landscape](https://landscape.cncf.io/category=continuous-integration-delivery&format=card-mode&grouping=category)

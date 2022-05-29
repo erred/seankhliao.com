@@ -2,7 +2,6 @@
 
 ## throw away all the abstractions, do it all by hand
 
-
 ### _kubernetes_
 
 Sure, [kubernetes](https://kubernetes.io/) is complicated,

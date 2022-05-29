@@ -2,7 +2,6 @@
 
 ## software development process at $dayjob
 
-
 ### _software_ development
 
 So me, fresh out of school, interviewing for jobs,

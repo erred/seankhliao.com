@@ -2,7 +2,6 @@
 
 ## so iptables is getting replaced
 
-
 ### nftables basics
 
 no default anythings

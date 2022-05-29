@@ -2,7 +2,6 @@
 
 ## data for a wire
 
-
 ### _serialization_
 
 The 2 main axes of serialization: text/binary and schema/self-describing

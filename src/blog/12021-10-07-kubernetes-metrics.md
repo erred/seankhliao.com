@@ -2,7 +2,6 @@
 
 ## ever wondered what metrics kubernetes exposes?
 
-
 ### _kubernetes_ metrics
 
 Kubernetes generates quite a bit of metrics, but do you actually make use of them?

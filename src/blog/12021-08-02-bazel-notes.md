@@ -2,7 +2,6 @@
 
 ## that fancy build system
 
-
 ### _bazel_
 
 [bazel](https://bazel.build/), an open implementation of google's build system,
@@ -78,7 +77,6 @@ so you're sort of stuck copy-pasting a lot of `sha256`s and urls.
 The build files declare the things you want to be able to output for a given directory.
 Ex the following builds:
 a go executable, a container image, and a target to push the image to a remote registry.
-
 
 ```bzl
 load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")

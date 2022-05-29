@@ -2,7 +2,6 @@
 
 ## notes on generating grpc code for go
 
-
 ### _grpc_ for go
 
 - install `protoc`, usually from package manager

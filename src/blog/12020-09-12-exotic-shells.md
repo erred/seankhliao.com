@@ -2,7 +2,6 @@
 
 ## some non-standard shells
 
-
 ### _shell_
 
 Shells, the thing you interact with in a terminal,
@@ -30,9 +29,6 @@ Comes with builtin file manager.
 [Oil][oil] apparently sits somewhere between bash and python.
 Best approached from a (programming) language perspective.
 Barely documented.
-
-
-
 
 [elvish]: https://elv.sh/
 [fish]: https://fishshell.com/

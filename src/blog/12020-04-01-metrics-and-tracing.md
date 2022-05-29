@@ -2,7 +2,6 @@
 
 ## metrics and tracing with prometheus, jaeger, opentracing, opencensus, and opentelemetry
 
-
 ### metrics and tracing
 
 So you created a mess of services that talk to each other

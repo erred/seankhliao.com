@@ -2,7 +2,6 @@
 
 ## spinning up a vm just to run a bash script...
 
-
 ### _github_ actions
 
 Say you need your pull request titles to fit a certain format

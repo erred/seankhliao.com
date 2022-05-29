@@ -2,7 +2,6 @@
 
 ## stats about go modules
 
-
 ### _go_ module survey
 
 **Biases**:

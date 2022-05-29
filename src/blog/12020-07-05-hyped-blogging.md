@@ -2,7 +2,6 @@
 
 ## but you can't just dump text over http and expect people to read it
 
-
 ### _hyped_ blogging
 
 Apparently it's not enough to just convert

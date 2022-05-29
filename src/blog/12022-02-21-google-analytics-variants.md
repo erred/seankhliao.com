@@ -2,7 +2,6 @@
 
 ## different ways of setting up google analytics
 
-
 ### _analytics_
 
 Who doesn't want to know what's happening on their web pages?
@@ -20,7 +19,7 @@ and the current recommendation for loading the tracking code is via gtag.js:
 #### _Google_ Analytics 4
 
 GA4 is the latest version of Google Analytics.
-Now you have a single stream of  _event_,
+Now you have a single stream of _event_,
 with key-value attributes to cover the details.
 Nicer dashboard, covers more platforms.
 IDs look like `G-XXXXXX`,

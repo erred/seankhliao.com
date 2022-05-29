@@ -2,7 +2,6 @@
 
 ## where to get your stats from
 
-
 ### _k8s_
 
 The DIY PaaS, and today I'm thinking about how to measure CPU and memory

@@ -2,7 +2,6 @@
 
 ## Yet another CI SaaS
 
-
 ### _buildkite_
 
 [buildkite](https://buildkite.com/) is a CI system where you provide the runners,

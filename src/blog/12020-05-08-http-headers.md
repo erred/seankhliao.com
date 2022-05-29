@@ -2,7 +2,6 @@
 
 ## http metadata
 
-
 ### _headers_
 
 so much metadata to read/set

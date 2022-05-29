@@ -2,7 +2,6 @@
 
 ## the convoluted setup i go through to get proper caching
 
-
 ### _skaffold_
 
 [skaffold](https://skaffold.dev/) is a great dev tool to detect code changes
@@ -10,8 +9,6 @@ and manage the build & deploy phases.
 I use it with [kaniko](https://github.com/GoogleContainerTools/kaniko)
 to build images in my cluster.
 Unfortunately, this comes with a set of problems: caching.
-
-
 
 #### _baseline_
 
@@ -39,13 +36,13 @@ metadata:
   name: feed-agg
 build:
   artifacts:
-  - image: europe-north1-docker.pkg.dev/com-seankhliao/kluster/feed-agg
-    kaniko:
-      reproducible: true
-      singleSnapshot: true
-      skipUnusedStages: true
-      useNewRun: true
-      image: gcr.io/kaniko-project/executor:latest
+    - image: europe-north1-docker.pkg.dev/com-seankhliao/kluster/feed-agg
+      kaniko:
+        reproducible: true
+        singleSnapshot: true
+        skipUnusedStages: true
+        useNewRun: true
+        image: gcr.io/kaniko-project/executor:latest
   cluster:
     pullSecretName: kaniko-secret
     pullSecretPath: kaniko-secret
@@ -180,24 +177,24 @@ metadata:
   name: feed-agg
 build:
   artifacts:
-  - image: europe-north1-docker.pkg.dev/com-seankhliao/kluster/feed-agg
-    kaniko:
-      reproducible: true
-      singleSnapshot: true
-      skipUnusedStages: true
-      useNewRun: true
-      whitelistVarRun: true
-      image: gcr.io/kaniko-project/executor:latest
-      registryMirror: mirror.gcr.io
-      buildArgs:
-        GOPROXY: http://athens.athens.svc.cluster.local
-        GOCACHE: /var/run/gobuildcache
-        GOMODCACHE: /var/run/gomodcache
-      volumeMounts:
-        - name: modcache
-          mountPath: /var/run/gomodcache
-        - name: buildcache
-          mountPath: /var/run/gobuildcache
+    - image: europe-north1-docker.pkg.dev/com-seankhliao/kluster/feed-agg
+      kaniko:
+        reproducible: true
+        singleSnapshot: true
+        skipUnusedStages: true
+        useNewRun: true
+        whitelistVarRun: true
+        image: gcr.io/kaniko-project/executor:latest
+        registryMirror: mirror.gcr.io
+        buildArgs:
+          GOPROXY: http://athens.athens.svc.cluster.local
+          GOCACHE: /var/run/gobuildcache
+          GOMODCACHE: /var/run/gomodcache
+        volumeMounts:
+          - name: modcache
+            mountPath: /var/run/gomodcache
+          - name: buildcache
+            mountPath: /var/run/gobuildcache
   cluster:
     pullSecretName: kaniko-secret
     pullSecretPath: kaniko-secret

@@ -2,7 +2,6 @@
 
 ## authz in with just the firewall?
 
-
 ### _cloudflare_ firewall
 
 So Cloudflare has a variety of ways to lock down access to your site.

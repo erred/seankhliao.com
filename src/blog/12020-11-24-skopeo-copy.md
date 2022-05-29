@@ -2,7 +2,6 @@
 
 ## copying containers between registries
 
-
 ### _skopeo_
 
 Ever needed to move a container image somewhere?

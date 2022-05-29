@@ -1,7 +1,6 @@
 # makefile notes
 
-## 
-
+##
 
 ### _make_
 
@@ -53,7 +52,6 @@ $^
 #### _targets_
 
 basics
-
 
 ```
 # simple target

@@ -2,7 +2,6 @@
 
 ## private go module proxies
 
-
 ### _go_ module proxies
 
 what are the options besides the default public [proxy.golang.org](https://proxy.golang.org/) if you want to run something private?

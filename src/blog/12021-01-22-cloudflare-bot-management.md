@@ -2,7 +2,6 @@
 
 ## managing bots with cloudflare
 
-
 ### _cloudflare_
 
 $job has a bot problem,

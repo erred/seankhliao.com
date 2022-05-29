@@ -2,7 +2,6 @@
 
 ## using terraform for a bare metal server
 
-
 ### _terraform_
 
 [terraform](https://www.terraform.io/) rightly describes itself as a provisioning tool,

@@ -2,13 +2,11 @@
 
 ## running jenkins jobs on github push
 
-
 ### _jenkins_ job dsl
 
 I was browsing through our central jenkins jobs repo at work
 (which uses the [Job DSL](https://jenkinsci.github.io/job-dsl-plugin/) plugin)
 and noticed that all the git jobs were triggered by:
-
 
 ```groovy
 job('something--build-master') {

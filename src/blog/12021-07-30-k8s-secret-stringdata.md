@@ -2,7 +2,6 @@
 
 ## bugs in removing stringdata fields
 
-
 ### _Secret_
 
 Kubernetes Secrets are... key-value pairs of secrets.

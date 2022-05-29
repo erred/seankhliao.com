@@ -2,7 +2,6 @@
 
 ## or as close as you can get
 
-
 ### _unpublishing_ go modules
 
 _tldr:_ `retract [v0.0.0-0, vX.Y.Z]` and publish a new version at `vX.Y.Z`

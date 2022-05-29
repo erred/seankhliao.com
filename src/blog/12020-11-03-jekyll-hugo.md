@@ -2,7 +2,6 @@
 
 ## static site generators
 
-
 ### _static_ site generators
 
 jekyll and hugo are the 2 big ones I know of.

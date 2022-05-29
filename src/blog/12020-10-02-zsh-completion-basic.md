@@ -2,7 +2,6 @@
 
 ## basic notes on zsh completion system
 
-
 ### _completion_
 
 `TAB` all the way.

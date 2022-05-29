@@ -2,7 +2,6 @@
 
 ## use systemd to manage wireguard
 
-
 ### Goals
 
 - setup a dual stack "server-client vpn" through wireguard using just _systemd-networkd_

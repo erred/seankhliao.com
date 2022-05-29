@@ -2,7 +2,6 @@
 
 ## so many different type of package managers
 
-
 ### _package_ managers
 
 Extensible! Modular!

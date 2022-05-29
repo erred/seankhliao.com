@@ -2,7 +2,6 @@
 
 ## all the things that aren't code in a repo
 
-
 ### _repo_ metadata
 
 (Long lived) code is usually hosted in a repo somewhere.

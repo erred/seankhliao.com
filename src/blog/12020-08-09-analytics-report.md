@@ -2,7 +2,6 @@
 
 ## burn time by building analytics reports
 
-
 ### _Analytics_ report
 
 Got 3+ hours to waste?

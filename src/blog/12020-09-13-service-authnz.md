@@ -2,7 +2,6 @@
 
 ## authn/z by the service or network
 
-
 ### scenarios
 
 #### _service_ authn authz

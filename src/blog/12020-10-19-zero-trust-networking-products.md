@@ -2,7 +2,6 @@
 
 ## wading through the growing field of zero trust networking products
 
-
 ### _beyondcorp_
 
 [BeyondCorp](https://www.beyondcorp.com/)

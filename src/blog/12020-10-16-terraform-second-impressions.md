@@ -2,7 +2,6 @@
 
 ## thoughts on terraform after using it for a few more things
 
-
 ### _terraform_
 
 Control anything with an API.

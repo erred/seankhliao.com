@@ -2,7 +2,6 @@
 
 ## updated weechat configs
 
-
 ### _weechat_ config updates
 
 use it more, config it more

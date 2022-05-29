@@ -2,7 +2,6 @@
 
 ## letting the user linger
 
-
 ### _lingering_
 
 systemd, the process lifecycle manager,

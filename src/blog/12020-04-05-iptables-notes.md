@@ -2,7 +2,6 @@
 
 ## finally getting round to remembering iptables
 
-
 ### iptables basics
 
 _FILTER_ is the default table,

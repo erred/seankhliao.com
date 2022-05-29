@@ -2,7 +2,6 @@
 
 ## why use systemd when you can use kubelet?
 
-
 ### _kubelet_ standalone
 
 [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/)

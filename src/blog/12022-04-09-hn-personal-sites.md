@@ -2,7 +2,6 @@
 
 ## a variety of maybe handcrafted things
 
-
 ### _hn_ personal sites
 
 While I don't really care for the content of the forum,
@@ -116,60 +115,61 @@ There were also quite a fre 404/503 responses, error logs below:
 
 ### _analysis_ on headers
 
-*server*, based on the `Server` header, the more interesting numbers might be:
+_server_, based on the `Server` header, the more interesting numbers might be:
 
-* 2 BunnyCDN
-* 3 Microsoft IIS
-* 3 OpenBSD httpd
-* 5 fly.io
-* 14 Litespeed
-* 16 caddy
-* 30 Amazon S3
-* 76 Vercel
-* 112 Apache
-* 121 Netlify
-* 161 Github
-* 193 nginx (14 openresty)
-* 219 cloudflare
+- 2 BunnyCDN
+- 3 Microsoft IIS
+- 3 OpenBSD httpd
+- 5 fly.io
+- 14 Litespeed
+- 16 caddy
+- 30 Amazon S3
+- 76 Vercel
+- 112 Apache
+- 121 Netlify
+- 161 Github
+- 193 nginx (14 openresty)
+- 219 cloudflare
 
 Only Ubuntu included the OS for nginx,
 while Apache included OSes for Ubuntu, Debian, FreeBSD, and CentOS.
 65 didn't include any `Server` header, these seem more likely to be custom written ones
 (not counting the ones behind a CDN)
 
-*Content-Type*, *Date*
+_Content-Type_, _Date_
 These seem to be universal. Everyone includes them.
 
-*X-Achievement*
+_X-Achievement_
 
 www.maxlaumeister.com is apparently a site with achievements for finding various things,
 one of which is this header.
 
-*X-Gay-Clown-Putin*, *X-Kremlin-Surrender-Now*, *X-Support-Ukraine*
+_X-Gay-Clown-Putin_, _X-Kremlin-Surrender-Now_, _X-Support-Ukraine_
 
 petergarner.net includes an interesting set of headers relating to current world events:
-* X-Gay-Clown-Putin: ["Иди на хуй, маленький Путин"]
-* X-Kremlin-Surrender-Now: ["Putin is mad: he will kill you all. Give up now and live"]
-* X-Support-Ukraine: ["go fuck yourself putin"]
 
-*Heartbleed*
+- X-Gay-Clown-Putin: ["Иди на хуй, маленький Путин"]
+- X-Kremlin-Surrender-Now: ["Putin is mad: he will kill you all. Give up now and live"]
+- X-Support-Ukraine: ["go fuck yourself putin"]
+
+_Heartbleed_
 honeypot.net has a [Heartbleed header](https://heartbleedheader.com/),
 not sure if it's still relevant these days.
 
-*Traceparent*
+_Traceparent_
 hypothes.is is the only site including the Traceparent header from [OpenTelemetry](https://opentelemetry.io/).
 
-*X-Ipfs-Path*
+_X-Ipfs-Path_
 karmanyaah.malhotra.cc spports IPFS via IPNS
 
-*X-Adblock-Key*
+_X-Adblock-Key_
 bluocms.com pays(?) to bypass adblock
 
-*X-Clacks-Overhead*
+_X-Clacks-Overhead_
 [X-Clacks-Overhead][https://xclacksoverhead.org/home/about] exists, referencing something Terry Prachet related?
 
-*X-Hacker*
+_X-Hacker_
 Either a automattic thing, or one other person uses this.
 
-*X-Pingback*
+_X-Pingback_
 Seems some things are still powered by RPC over XML...

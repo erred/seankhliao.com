@@ -2,7 +2,6 @@
 
 ## how to get your other things included into your vendor dir
 
-
 ### _go_ mod vendor
 
 `go mod vendor` is fairly limited in scope,
@@ -41,7 +40,6 @@ are included in `vendor`.
 
 We can force files to be needed as part of a build by embedding them,
 so in the above example in `v.go`:
-
 
 ```go
 import "embed"

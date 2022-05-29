@@ -2,7 +2,6 @@
 
 ## understanding how opentelemetry handles data
 
-
 ### _OpenTelemetry_
 
 [OpenTelemetry](https://opentelemetry.io/),

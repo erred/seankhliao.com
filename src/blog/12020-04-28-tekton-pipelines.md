@@ -2,7 +2,6 @@
 
 ## using tekton pipelines
 
-
 ### _tekton_ pipelines
 
 Fancy ci/cd system / task runner with a hard dependency on k8s.

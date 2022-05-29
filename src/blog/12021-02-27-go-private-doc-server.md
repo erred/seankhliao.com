@@ -2,7 +2,6 @@
 
 ## docs like pkg.go.dev for your private go code
 
-
 ### _docs_
 
 One nice thing about Go code is that docs are consistent,

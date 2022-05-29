@@ -2,7 +2,6 @@
 
 ## sudo without a password
 
-
 who cares about the _2nd_ factor?
 just the hardware key needed!
 

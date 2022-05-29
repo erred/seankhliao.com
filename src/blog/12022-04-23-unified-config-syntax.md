@@ -2,7 +2,6 @@
 
 ## one config language to rule them all?
 
-
 ### _unified_ config
 
 If you've written any amount of deployment config for a moderately complex app,
@@ -14,6 +13,7 @@ This is unfortunate,
 since you lose syntax checking etc.
 
 Example, yaml in yaml
+
 ```yaml
 apiVersion: v1
 kind: ConfigMap
@@ -30,6 +30,7 @@ data:
 ```
 
 Example: json in hcl
+
 ```terraform
 resource "aws_iam_policy" "policy" {
   name = "foo"
@@ -57,6 +58,7 @@ you now have an incomplete config with invalid syntax.
 Also, this is very much tied to the tool you're using
 
 Example: helm
+
 ```helm
 apiVersion: v1
 kind: ConfigMap
@@ -67,6 +69,7 @@ data:
 ```
 
 Example: terraform
+
 ```terraform
 resource "aws_iam_policy" "policy" {
   name = "foo"

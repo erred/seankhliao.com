@@ -2,7 +2,6 @@
 
 ## someone complained it was too hard
 
-
 ### _go_ modules
 
 `GOPATH` is dying, better switch to modules soon,

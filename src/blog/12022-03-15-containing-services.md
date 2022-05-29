@@ -2,7 +2,6 @@
 
 ## isolating services so they don't interfere with each other
 
-
 ### _containing_ services
 
 So you have a set of things you want to run,

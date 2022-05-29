@@ -2,7 +2,6 @@
 
 ## notes on server network setup
 
-
 ### _networkd_ notes
 
 So, I have a server with a single /32 ipv4 and a /64 ipv6.

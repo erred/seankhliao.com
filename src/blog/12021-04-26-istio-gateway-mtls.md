@@ -2,7 +2,6 @@
 
 ## mtls notes
 
-
 ### _gateway_
 
 [Istio](https://istio.io/latest/)

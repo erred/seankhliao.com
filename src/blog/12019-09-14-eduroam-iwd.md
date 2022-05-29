@@ -2,7 +2,6 @@
 
 ## eduroam, iwd version
 
-
 My [previous attempts](/blog/12019-09-04-eduroam/)
 to get eduroam wifi with [wpa_supplicant](https://wiki.archlinux.org/index.php/WPA_supplicant)
 more or less worked.
@@ -34,4 +33,3 @@ EAP-PEAP-Phase2-Password=...
 [Settings]
 Autoconnect=true
 ```
-

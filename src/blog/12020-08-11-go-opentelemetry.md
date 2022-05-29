@@ -2,7 +2,6 @@
 
 ## updated opentelemetry stuff
 
-
 ### _OpenTelemetry_
 
 Time passes, APIs change, things break (or not).

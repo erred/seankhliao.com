@@ -2,7 +2,6 @@
 
 ## using k8s secrets
 
-
 ### _using_ secrets
 
 #### environment

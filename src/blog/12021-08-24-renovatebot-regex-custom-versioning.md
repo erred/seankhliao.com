@@ -2,7 +2,6 @@
 
 ## understanding what your coworker copy and pasted into the Dockerfile
 
-
 ### _renovate_
 
 We run [renovate](https://github.com/renovatebot/renovate) to watch upstream sources

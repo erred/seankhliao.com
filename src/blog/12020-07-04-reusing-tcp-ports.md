@@ -2,7 +2,6 @@
 
 ## how to reuse ports for TCP in Go
 
-
 ### _TCP_ port reuse
 
 Usually, when you make outgoing TCP connections,

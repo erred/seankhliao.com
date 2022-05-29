@@ -2,7 +2,6 @@
 
 ## file permissions in kubernetes volumes
 
-
 ### _k8s_ volume perms
 
 By default, containers run as root

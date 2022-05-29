@@ -2,7 +2,6 @@
 
 ## getting those git hooks to everyone
 
-
 ### _git_ hooks
 
 git has [hooks](https://git-scm.com/docs/githooks),

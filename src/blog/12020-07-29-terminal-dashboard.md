@@ -2,7 +2,6 @@
 
 ## a all in one dashboard for the terminal
 
-
 ### _terminal_ dashboard
 
 sometimes you just want to log in, hit a dashboard and see wtf your server is doing

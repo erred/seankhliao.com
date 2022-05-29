@@ -2,7 +2,6 @@
 
 ## short circuits instead of if/else
 
-
 ### _short_ circuit
 
 Sometimes you are handed the hammer that is `&&` and `||`,

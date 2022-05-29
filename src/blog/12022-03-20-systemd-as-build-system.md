@@ -2,7 +2,6 @@
 
 ## systemd eats the world
 
-
 ### _build_ system
 
 So a build system (for a CI process) is usually a collection of program executions
@@ -68,8 +67,9 @@ it may be less useful than it appears, as you have no good way of specifiying th
 
 Unfortunately, there's no way to say "run all these units in a single chroot".
 So your options are probably:
-* create a dedicated user/instance and use user services
-* create a base image, enable the end target and run with ephemeral systemd-nspawn containers.
+
+- create a dedicated user/instance and use user services
+- create a base image, enable the end target and run with ephemeral systemd-nspawn containers.
 
 #### _example_
 

@@ -2,7 +2,6 @@
 
 ## collecting logs with otel
 
-
 ### _logs_
 
 The formalized version of _printf_ debugging.
@@ -36,11 +35,11 @@ receivers:
       - std.log
     operators:
       - type: regex_parser
-        regex: '^(?P<timestamp_field>.{19}) (?P<message>.*)$'
+        regex: "^(?P<timestamp_field>.{19}) (?P<message>.*)$"
         timestamp:
           parse_from: timestamp_field
           layout_type: strptime
-          layout: '%Y/%m/%d %T'
+          layout: "%Y/%m/%d %T"
 ```
 
 Resulting in (otel logging exporter output):
@@ -142,7 +141,7 @@ receivers:
         regex: '^(?P<level>[EI])(?P<timestamp_field>.{20})\s+(?P<threadid>\d+)\s(?P<file>\w+\.go):(?P<line>\d+)]\s+(?P<message>.*)$'
         timestamp:
           parse_from: timestamp_field
-          layout: '%m%d %H:%M:%S.%f'
+          layout: "%m%d %H:%M:%S.%f"
         severity:
           parse_from: level
           mapping:
@@ -168,3 +167,4 @@ Body: {
      -> msg: STRING("msg"="something bad happened" "error"="oops"  )
      -> threadid: STRING(73779)
 }
+```

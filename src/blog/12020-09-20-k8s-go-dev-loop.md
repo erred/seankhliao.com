@@ -2,7 +2,6 @@
 
 ## dev loop for go projects in k8s
 
-
 ### _dev_ loop
 
 #### _manual_

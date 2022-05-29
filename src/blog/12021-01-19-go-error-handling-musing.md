@@ -2,7 +2,6 @@
 
 ## random thoughts on go error handling
 
-
 ### _errors_
 
 _premise_:

@@ -2,7 +2,6 @@
 
 ## how long does it take to get an alert?
 
-
 ### _alertmanager_
 
 [alertmanager](https://github.com/prometheus/alertmanager)
@@ -28,7 +27,6 @@ In the most unfortunate case:
 - wait up to `$for` (round up to nearest `$evaluation_interval`) to trigger the alert
 - wait up to `$group_wait` to send initial notification
   - updates are sent at `$group_wait` ticks
-
 
 Now say you have another on call system layered on top.
 It too is likely to be evaluation_interval / delay based,

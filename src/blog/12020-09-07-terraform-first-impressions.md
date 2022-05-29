@@ -2,7 +2,6 @@
 
 ## first impressions on terraform
 
-
 ### _first_ impressions on terraform
 
 [terraform][terraform] is probably the industry standard

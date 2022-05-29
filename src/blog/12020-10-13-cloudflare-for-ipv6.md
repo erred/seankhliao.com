@@ -2,7 +2,6 @@
 
 ## other uses for cloudflare
 
-
 ### _ipv6_
 
 Say you're in a cloud that doesn't want to provide ipv6 addresses _glare GCP_.

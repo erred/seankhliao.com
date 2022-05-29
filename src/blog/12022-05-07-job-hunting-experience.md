@@ -2,11 +2,9 @@
 
 ## things to do when you need money
 
-
 ### _job_ hunting
 
 Things i experienced when looking for someone to pay me.
-
 
 _recruiters:_ right now, I think if they don't work directly for the company,
 they're not worth the effort to talk to.

@@ -2,7 +2,6 @@
 
 ## did i accidentally use any GPL things...
 
-
 ### _license_ scan
 
 Open source is fun, but also kinda annoying.

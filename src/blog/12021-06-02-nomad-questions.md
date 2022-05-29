@@ -1,7 +1,6 @@
 # nomad questions
 
-## 
-
+##
 
 ### _nomad_
 

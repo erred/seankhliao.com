@@ -2,7 +2,6 @@
 
 ## framework is so arbitrary
 
-
 ### _the_ update framework
 
 The Update Framework [TUF][tuf] is

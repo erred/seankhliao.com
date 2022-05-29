@@ -2,7 +2,6 @@
 
 ## non user/org pages on github
 
-
 ### _github_
 
 For better or for worse, I spend a lot of time on github,

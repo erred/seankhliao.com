@@ -2,7 +2,6 @@
 
 ## public logs of things...
 
-
 ### _certificate_ transparency
 
 [certificate transparency](https://certificate.transparency.dev/)

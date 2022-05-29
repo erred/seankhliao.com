@@ -2,7 +2,6 @@
 
 ## down with GPG!
 
-
 ### _git_ signing
 
 Ah, _git_, well known for its not very friendly ux,

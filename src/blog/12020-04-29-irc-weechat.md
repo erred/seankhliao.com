@@ -2,7 +2,6 @@
 
 ## irc with weechat
 
-
 ### _irc_ weechat
 
 some developer communities apparently only exist on irc,

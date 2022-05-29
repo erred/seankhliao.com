@@ -2,7 +2,6 @@
 
 ## do maths on search and replace
 
-
 ### _problem_
 
 Say you're using terraform with some poorly designed cloud thing,

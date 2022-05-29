@@ -2,7 +2,6 @@
 
 ## tally of ssh login failures
 
-
 ### _login_ fail
 
 So I have/had a server with a public address,

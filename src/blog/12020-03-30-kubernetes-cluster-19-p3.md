@@ -2,7 +2,6 @@
 
 ## 19th attempt to get a k8s setup working
 
-
 ### Goals
 
 - monitoring

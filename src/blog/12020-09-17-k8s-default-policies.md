@@ -2,7 +2,6 @@
 
 ## k8s config files are long, use common default policies to shorten them
 
-
 ### _common_ config
 
 Kubernetes config files are long/verbose enough as it is

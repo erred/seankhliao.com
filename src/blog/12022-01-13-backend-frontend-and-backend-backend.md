@@ -2,7 +2,6 @@
 
 ## multilayer backends
 
-
 ### _backend_ frontend
 
 Usually when people say frontend they think things that go in the web browser,

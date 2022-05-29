@@ -2,7 +2,6 @@
 
 ## notes on go using go modules
 
-
 package management in Go,
 seems like it's _finally_ coming together
 
@@ -113,4 +112,3 @@ root/
   `- subdir
       `- go.mod
 ```
-

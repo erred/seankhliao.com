@@ -2,7 +2,6 @@
 
 ## just tell me which to use
 
-
 ### _colormaps_
 
 You have data, and you want to plot it with color as a dimension:

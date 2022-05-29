@@ -2,7 +2,6 @@
 
 ## does it work?
 
-
 ### _argocd_
 
 We've settled on [Argo CD](https://argoproj.github.io/argo-cd/)

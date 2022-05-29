@@ -2,7 +2,6 @@
 
 ## baby steps, one at a time, now you want some extra encryption
 
-
 ### _encryption_
 
 Why not encrypt everything, you think.

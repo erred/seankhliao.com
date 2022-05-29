@@ -2,7 +2,6 @@
 
 ## do not recommend systemd-homed
 
-
 ### _systemd-homed_
 
 I have systemd-homed setup to use a subvolume (btrfs).

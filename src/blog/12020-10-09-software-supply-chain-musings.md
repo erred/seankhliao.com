@@ -2,7 +2,6 @@
 
 ## starting point for thinking about software supply chain security
 
-
 ### _software_ supply chain
 
 attacker end goals:

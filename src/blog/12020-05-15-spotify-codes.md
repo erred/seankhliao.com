@@ -2,7 +2,6 @@
 
 ## spotify codes
 
-
 ### _spotify_ code
 
 Ever wondered what that wavy thing under shareable spotify images were?

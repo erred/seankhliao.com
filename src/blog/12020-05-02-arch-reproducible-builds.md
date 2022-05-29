@@ -2,7 +2,6 @@
 
 ## reproducible builds for arch linux
 
-
 ### _Arch Linux_ Reproducible Builds
 
 Reason I don't use Gentoo / Linux from Scratch:

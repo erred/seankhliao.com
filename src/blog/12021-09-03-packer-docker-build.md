@@ -2,7 +2,6 @@
 
 ## building docker images with packer
 
-
 ### _packer_ docker build
 
 I spy with my little eye:

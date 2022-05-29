@@ -2,6 +2,7 @@
 description: planning ahead
 title: personal roadmap
 ---
+
 ### roadmap
 
 where to now?

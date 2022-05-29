@@ -2,7 +2,6 @@
 
 ## biased overview of open source licenses
 
-
 ### licenses
 
 open source licenses,
@@ -74,4 +73,3 @@ plus patents
 #### AGPL
 
 GPL, but includes everything over the network
-

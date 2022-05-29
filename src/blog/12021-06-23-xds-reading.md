@@ -2,7 +2,6 @@
 
 ## background reading on xDS protocol
 
-
 ### _xDS_
 
 xDS is a _set_ of discovery services (hence the name _x_ Discovery Service or _xDS_)
@@ -26,7 +25,6 @@ mirrored to the [envoy/data-plane-api](https://github.com/envoyproxy/data-plane-
 for consumption.
 [cncf/xds](https://github.com/cncf/xds) appears to be a future home for it?
 There are also reference control plane servers, ex: [go-control-plane](https://github.com/envoyproxy/go-control-plane).
-
 
 #### _glossary_
 

@@ -2,7 +2,6 @@
 
 ## the long and arduous journey of reinstalling arch
 
-
 _why?_
 you ask,
 it has gotten cluttered and full of dubious configs,
@@ -185,4 +184,3 @@ DefaultTimeoutStopSec=10s
 ```
 ssh-keygen -t ed25519
 ```
-

@@ -2,7 +2,6 @@
 
 ## use systemd to manage wireguard
 
-
 ### Goals
 
 - setup a default VPN through wireguard using just _systemd-networkd_

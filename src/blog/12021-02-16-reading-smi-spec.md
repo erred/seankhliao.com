@@ -2,7 +2,6 @@
 
 ## reading the service mesh interface spec
 
-
 ### _service mesh_ interface
 
 Service meshes are hype.

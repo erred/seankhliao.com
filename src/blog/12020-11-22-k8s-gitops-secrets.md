@@ -2,7 +2,6 @@
 
 ## secrets and gitops and k8s
 
-
 ### _gitops_
 
 The idea that you can track your desired state

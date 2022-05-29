@@ -2,7 +2,6 @@
 
 ## setting up ingress for knative
 
-
 ### _knative_
 
 Want GCP [Cloud Run](https://cloud.google.com/run) like functionality

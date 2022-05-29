@@ -2,7 +2,6 @@
 
 ## why do so many people get tripped up on this
 
-
 ### _subgroups_
 
 Say you use [GitLab](https://gitlab.com/)

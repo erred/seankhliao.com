@@ -2,7 +2,6 @@
 
 ## notes on cgi things
 
-
 ### _common_ gateway interface
 
 So how do programs of yore run as web servers

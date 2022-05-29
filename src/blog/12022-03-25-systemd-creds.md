@@ -2,7 +2,6 @@
 
 ## a credential manager in systemd
 
-
 ### _systemd-creds_
 
 So, your service unit needs secrets,

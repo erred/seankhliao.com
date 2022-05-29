@@ -40,6 +40,7 @@ pacstrap /mnt base base-devel linux linux-firmware intel-ucode \
 ```
 
 #### user
+
 ```
 groupadd -r sudo
 useradd -m -G vidoe,input,sudo,docker user
@@ -48,6 +49,7 @@ EDITOR=nvim visudo
 ```
 
 ##### as user
+
 ```
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin && makepkg -si
@@ -56,7 +58,7 @@ cd ~
 git clone https://github.com/seankhliao/pkgbuilds
 cd pkgbuilds/sway-service && makepkg -si
 cd ~
-rm -rf .config 
+rm -rf .config
 git clone https://github.com/seankhliao/config .config
 sudo ln -s $(pwd)/.config/zsh/zshenv /etc/zsh/zshenv
 cd ~
@@ -64,7 +66,9 @@ mkdir -p data/{down,xdg/{nvim/{backup,undo},zsh}}
 ```
 
 #### system
+
 after reboot
+
 ```
 systemctl enable --now wpa_supplicant@wlp58s0
 systemctl enable --now pcscd

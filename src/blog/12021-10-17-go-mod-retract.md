@@ -2,7 +2,6 @@
 
 ## how to retract module (versions)
 
-
 ### _retract_
 
 The Go module ecosystem is based on the concept of _immutable_ versions.

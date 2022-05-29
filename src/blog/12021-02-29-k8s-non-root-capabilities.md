@@ -2,7 +2,6 @@
 
 ## using capabilities in kubernetes when you're not root
 
-
 ### _non_ root
 
 By default, containers are root in their own little sandbox,

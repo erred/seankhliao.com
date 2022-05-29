@@ -2,7 +2,6 @@
 
 ## thoughts on passing loggers downstream
 
-
 ### loggers
 
 Loggers, usually you don't want the global one

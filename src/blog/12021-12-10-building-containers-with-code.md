@@ -2,7 +2,6 @@
 
 ## mush together tarballs into a new container image
 
-
 ### _building_ containers
 
 `docker build` requires a docker daemon,

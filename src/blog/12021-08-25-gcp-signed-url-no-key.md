@@ -2,7 +2,6 @@
 
 ## no more passing keys, background auth everywhere
 
-
 ### _signed_ urls
 
 So say you need to generate short lived urls granting access to a resource in GCP Cloud Storage,

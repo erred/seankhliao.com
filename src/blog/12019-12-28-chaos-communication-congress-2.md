@@ -2,7 +2,6 @@
 
 ## Maybe I'll know what to expect at 36c3 now
 
-
 ### Day _2_
 
 Now with a day of experience,
@@ -65,4 +64,3 @@ Man limits himself to recreating 1980s tech.
 _Woooh_
 like the plundervolt one,
 sweat spot in between entertaining and technical
-

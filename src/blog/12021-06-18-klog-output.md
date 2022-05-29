@@ -2,7 +2,6 @@
 
 ## writing out logs has never been so hard...
 
-
 ### _klog_
 
 [klog](https://pkg.go.dev/k8s.io/klog/v2) is interesting:

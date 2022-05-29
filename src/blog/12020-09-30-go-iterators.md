@@ -2,7 +2,6 @@
 
 ## iterators in go
 
-
 ### _iterators_
 
 #### _language_

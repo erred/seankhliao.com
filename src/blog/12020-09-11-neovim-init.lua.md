@@ -2,7 +2,6 @@
 
 ## early look at lua in neovim
 
-
 ### _neovim_
 
 [neovim][nvim] has partial support for [lua][lua],

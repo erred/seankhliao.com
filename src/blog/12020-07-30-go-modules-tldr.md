@@ -2,7 +2,6 @@
 
 ## practical go modules
 
-
 ### _go modules_
 
 Go modules are a collection of packages which share a

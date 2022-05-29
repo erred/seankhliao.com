@@ -2,7 +2,6 @@
 
 ## named data networking overview
 
-
 ### _NDN_ Named Data Networking
 
 Research [project](https://github.com/erred/uva-rp1) topic from January.

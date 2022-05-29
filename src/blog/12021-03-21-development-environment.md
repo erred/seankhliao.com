@@ -2,7 +2,6 @@
 
 ## what do I need to write code
 
-
 ### _dev_
 
 So apparently I don't write as much code as I try to get things running,

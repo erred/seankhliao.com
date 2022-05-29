@@ -2,7 +2,6 @@
 
 ## the foundations of a modern "cloud native" stack
 
-
 ### _cloud_ native
 
 Technologies and hype cycle come and go.

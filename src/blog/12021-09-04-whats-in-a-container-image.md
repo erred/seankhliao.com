@@ -2,7 +2,6 @@
 
 ## the new age of fat binaries...
 
-
 ### _container_ image
 
 These days there are 2 main types of container images floating around,

@@ -2,7 +2,6 @@
 
 ## WebAssembly, the next generation JVM?
 
-
 ### _WebAssembly_
 
 [WebAssembly (Wasm)](https://webassembly.org/)

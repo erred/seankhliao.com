@@ -2,7 +2,6 @@
 
 ## another look at logging
 
-
 ### _logging_ revisited
 
 last time [i looked](/blog/12020-04-12-go-structured-logging/)

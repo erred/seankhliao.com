@@ -2,7 +2,6 @@
 
 ## musings on frontend development
 
-
 ### _me_
 
 In this case, frontend means mainly web development,

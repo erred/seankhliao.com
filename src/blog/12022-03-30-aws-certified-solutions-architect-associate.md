@@ -2,7 +2,6 @@
 
 ## aws certified shill
 
-
 ### _AWS_ Certified Solutions Architect Associate
 
 [I got AWS SAA](https://www.credly.com/badges/8ebef582-0011-437e-a7d6-4c15d9cdf746/public_url)

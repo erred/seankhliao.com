@@ -2,7 +2,6 @@
 
 ## running tcp over wireguard
 
-
 something I noticed:
 less disconnects (but more timeouts) when running things over over wireguard.
 

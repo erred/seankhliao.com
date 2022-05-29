@@ -2,7 +2,6 @@
 
 ## layers and layers of protocols
 
-
 ### _multiplexing_
 
 _hardware_ layer: you have 2 interfaces:

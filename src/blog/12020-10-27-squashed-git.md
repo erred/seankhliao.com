@@ -2,7 +2,6 @@
 
 ## getting the right merge locally
 
-
 ### _squashed_ git
 
 extending [git notes](/blog/12019-06-06-notes-git/)

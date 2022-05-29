@@ -2,7 +2,6 @@
 
 ## connecting traces and logs in grafana
 
-
 ### _grafana_
 
 The recently released [Grafana](https://github.com/grafana/grafana)

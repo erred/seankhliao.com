@@ -2,7 +2,6 @@
 
 ## using pomerium as traefik forward auth
 
-
 ### Goals
 
 - docker deployment
@@ -224,4 +223,3 @@ docker run -d --rm --name jaeger \
     -l 'traefik.http.services.jaeger.loadbalancer.server.port=16686' \
     jaegertracing/all-in-one:1.17
 ```
-

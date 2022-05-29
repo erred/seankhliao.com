@@ -2,7 +2,6 @@
 
 ## rsync and significant traiing slashes
 
-
 ### _rsync_ and slashes
 
 the trailing slash for directories is important for rsync,

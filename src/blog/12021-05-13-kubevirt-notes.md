@@ -2,7 +2,6 @@
 
 ## notes from testing kubevirt
 
-
 ### _kubevirt_
 
 [kubevirt](https://kubevirt.io/) is a kubernetes controller

@@ -2,7 +2,6 @@
 
 ## first cert....
 
-
 ### _AWS_ Certified Cloud Practitioner
 
 [I got AWS CCP](https://www.credly.com/badges/215adb61-4874-40a5-b105-846a19cf1f1f/public_url).

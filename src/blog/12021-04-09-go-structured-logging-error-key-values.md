@@ -2,7 +2,6 @@
 
 ## annotating your logging lines with key=value from errors
 
-
 ### _logging_
 
 Logging, the more lightweight cousin to tracing everything,

@@ -2,7 +2,6 @@
 
 ## the modern softare architectural version of tabs vs spaces?
 
-
 ### _mono_ ?
 
 Do you lump all your code together in 1 big repo?

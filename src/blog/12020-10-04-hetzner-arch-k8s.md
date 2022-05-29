@@ -2,7 +2,6 @@
 
 ## setup for hetzner archlinux boxes to run k8s
 
-
 ### _hetzner_
 
 So [Hetzner](https://www.hetzner.com/) sells a bunch of computing stuff.

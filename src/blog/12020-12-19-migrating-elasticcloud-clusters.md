@@ -2,7 +2,6 @@
 
 ## moving an elastic cluster
 
-
 ### _elasticsearch_ cloud
 
 Say you need to move elastic deployments,

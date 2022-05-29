@@ -2,7 +2,6 @@
 
 ## services for authnz
 
-
 ### _authnz_
 
 For user requests only.

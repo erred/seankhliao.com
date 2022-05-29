@@ -2,7 +2,6 @@
 
 ## starting a kubernetes cluster
 
-
 ### _kubernetes_
 
 _tldr:_ `kind` for local testing, `k3s` for dead easy cluster setup, `kubeadm` for a customized install

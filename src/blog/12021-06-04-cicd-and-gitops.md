@@ -2,7 +2,6 @@
 
 ## both trendy, but do they mix?
 
-
 ### _ci/cd_
 
 Conitnuos Integration:

@@ -2,7 +2,6 @@
 
 ## everyone gets a cert
 
-
 ### _ssh_ certificates
 
 When you only keep around 1 server,

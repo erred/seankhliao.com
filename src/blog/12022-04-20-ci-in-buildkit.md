@@ -2,7 +2,6 @@
 
 ## containerizing your builds, the modern(?) way
 
-
 ### _buildkit_
 
 [BuildKit](https://github.com/moby/buildkit) is the core of docker build,

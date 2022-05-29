@@ -2,7 +2,6 @@
 
 ## how does google magically get authenticated to its apis
 
-
 ### _background_ auth
 
 GCP SDKs can usually magically detect when they're running in a supported environment

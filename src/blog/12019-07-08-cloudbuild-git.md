@@ -2,7 +2,6 @@
 
 ## git stuff done on cloudbuild
 
-
 [Google Cloud Build](https://cloud.google.com/cloud-build/),
 the minimalist CI system that is kinda close to
 [Knative Build](https://knative.dev/docs/build/)
@@ -98,4 +97,3 @@ steps:
       git checkout -b master origin/master  # set master to upstream master
 
 ```
-

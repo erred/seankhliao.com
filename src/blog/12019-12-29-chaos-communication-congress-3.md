@@ -66,7 +66,7 @@ black box proprietary things have lots of bugs.
 ##### _Hacking (with) a TPM_
 
 _I have ideas_
-so TPM is usable, __mostly__, probably.
+so TPM is usable, **mostly**, probably.
 I need to implement this
 
 ##### Linux on Open Source Hardware with Open Source chip design

@@ -2,7 +2,6 @@
 
 ## digitalocean is a scam, do not recommend.
 
-
 ### _DigitalOcean_
 
 What a scam.

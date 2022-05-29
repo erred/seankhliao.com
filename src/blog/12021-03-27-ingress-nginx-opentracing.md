@@ -2,7 +2,6 @@
 
 ## docs are few and far between
 
-
 ### _ingress-nginx_
 
 Don't ask me why I'm using the default [ingress-nginx](https://kubernetes.github.io/ingress-nginx/),

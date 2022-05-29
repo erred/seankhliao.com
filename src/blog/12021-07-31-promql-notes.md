@@ -2,7 +2,6 @@
 
 ## who invented this... thing
 
-
 ### _PromQL_
 
 [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/),
@@ -58,7 +57,6 @@ all the functions taking a range vector would be `<aggregation>_over_time` like 
 Which collapses an range vector back to an instant vector
 but doesn't aggregate across time series.
 
-
 ```
 http_server_requests_total[2m]
 
@@ -93,12 +91,12 @@ rate(http_requests_total[5m])[30m:1m]
 ```
 
 - `rate(http_requests_total[5m])`:
-For every input timestamp:
-look back 5 min, calculate the rate,
-output a single value.
+  For every input timestamp:
+  look back 5 min, calculate the rate,
+  output a single value.
 
 - `[30m:]`:
-Each input timestamp covers the last 30 min.
+  Each input timestamp covers the last 30 min.
 
 - `[...:1m]`: Evaluate every 1 min.
 

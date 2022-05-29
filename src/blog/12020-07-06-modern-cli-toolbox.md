@@ -2,7 +2,6 @@
 
 ## modernish takes on the cli tools
 
-
 ### _cli_ tools
 
 There are 1800 things in my `/bin`,

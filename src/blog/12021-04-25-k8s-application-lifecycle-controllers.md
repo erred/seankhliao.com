@@ -2,7 +2,6 @@
 
 ## something fancier than a plain Deployment
 
-
 ### _application_ lifecycle
 
 There's so much more to an application than just its straight runtime environment (Deployment).

@@ -2,7 +2,6 @@
 
 ## secrets for docker build
 
-
 ### _docker_ build
 
 It's 12020 and we finally have a supported way of using secrets

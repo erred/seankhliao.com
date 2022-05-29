@@ -2,7 +2,6 @@
 
 ## policy types and enforcement
 
-
 ### _Policy_ Enforcemnt
 
 You have _ideas_ about what connections/requests should go through.

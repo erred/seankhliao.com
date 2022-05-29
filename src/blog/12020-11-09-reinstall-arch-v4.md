@@ -2,7 +2,6 @@
 
 ## here at it again
 
-
 ### _install_
 
 1. setup disks, network, and base install from livecd,

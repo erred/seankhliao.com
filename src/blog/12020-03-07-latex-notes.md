@@ -2,7 +2,6 @@
 
 ## who forced us to use this thing
 
-
 ### latex
 
 oneliner (`$!` == last arg of last command):
@@ -184,4 +183,3 @@ reference: [bibliography management](https://en.wikibooks.org/wiki/LaTeX/Bibliog
   year    = {2020},
 }
 ```
-

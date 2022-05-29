@@ -2,7 +2,6 @@
 
 ## plugin ecosystem for neovim Sep. 2020
 
-
 ### _neovim_ plugins
 
 #### _plugin_ manager

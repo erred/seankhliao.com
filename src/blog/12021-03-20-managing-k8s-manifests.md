@@ -2,7 +2,6 @@
 
 ## too much yaml
 
-
 ### _k8s_ manifests
 
 Kubernetes manifests are great, defining a common, declarative,

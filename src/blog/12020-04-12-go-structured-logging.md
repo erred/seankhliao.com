@@ -2,7 +2,6 @@
 
 ## comparing structured logging libraries in go
 
-
 ### _structured_ logging
 
 who wants to read a mess of words anyways

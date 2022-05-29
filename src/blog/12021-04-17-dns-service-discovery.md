@@ -2,7 +2,6 @@
 
 ## who reads RFCs...
 
-
 ### _dns_ service discovery
 
 Globally available key-value store,

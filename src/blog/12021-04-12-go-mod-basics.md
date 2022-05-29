@@ -2,7 +2,6 @@
 
 ## is this a faq on modules?
 
-
 ### _modules_
 
 Go [modules](https://golang.org/ref/mod):

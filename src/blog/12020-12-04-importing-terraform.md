@@ -2,7 +2,6 @@
 
 ## who wants to write all those terraform files by hand
 
-
 ### _terraform_
 
 It's okay when you start with terraform from a clean slate,

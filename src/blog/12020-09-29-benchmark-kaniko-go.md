@@ -2,7 +2,6 @@
 
 ## building go apps in containers faster
 
-
 ### _kaniko_
 
 [kaniko](https://github.com/GoogleContainerTools/kaniko)

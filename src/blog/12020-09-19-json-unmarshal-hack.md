@@ -2,7 +2,6 @@
 
 ## shadowing types in unmarshaling
 
-
 ### _go_ json unmarshal
 
 Sometimes you want to perform some extra validatoon logic in unmarshaling json,

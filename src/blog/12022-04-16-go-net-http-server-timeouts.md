@@ -2,7 +2,6 @@
 
 ## don't blindly copy the timeouts...
 
-
 ### _net/http_ Server
 
 [Go](https://go.dev/)'s
@@ -40,7 +39,6 @@ and envoy only realises when it tries to use them.
 In this situation,
 with a trusted downstream (envoy) that has its own timeouts for dealing with untrusted clients,
 we can just not set the `IdleTimeout` and keep the connections around for longer.
-
 
 #### _Diagram_ updated
 

@@ -2,7 +2,6 @@
 
 ## what needs to happen to get exemplars in prometheus and grafana
 
-
 ### _exemplars_
 
 _tldr:_ not here (yet)

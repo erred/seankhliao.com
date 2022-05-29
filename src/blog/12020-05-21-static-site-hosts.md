@@ -2,7 +2,6 @@
 
 ## quick comparison of static site hosts
 
-
 ### _static_
 
 You have _html_, _css_, _js_, and some images you want the world to see.

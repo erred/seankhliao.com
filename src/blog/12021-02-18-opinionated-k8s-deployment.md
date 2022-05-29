@@ -2,7 +2,6 @@
 
 ## an opionionated and commented deployment manifest for generic apps
 
-
 ### _kubernetes_ manifests
 
 YAML engineer reporting in.

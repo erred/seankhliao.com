@@ -2,7 +2,6 @@
 
 ## 36c3 First!!!1!!l!!
 
-
 ### Day _1_
 
 Like a deer blinded by headlights I was,
@@ -113,4 +112,3 @@ seriously impressive thought process.
 to execute arbitrary code (with a weird self registered).
 Also **:facepalm:**.
 Maybe running a virtual machine to do SQL queries isn't the best of ideas?
-

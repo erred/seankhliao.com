@@ -2,7 +2,6 @@
 
 ## ugly yaml hacks
 
-
 ### _renovate_
 
 At $work we run [renovate](https://github.com/renovatebot/renovate)

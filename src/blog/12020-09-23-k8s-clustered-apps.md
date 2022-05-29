@@ -2,7 +2,6 @@
 
 ## starting clustered applications in k8s
 
-
 ### _clustered_
 
 So you want to run a clustered thing in k8s?

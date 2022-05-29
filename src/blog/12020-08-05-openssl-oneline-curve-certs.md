@@ -2,7 +2,6 @@
 
 ## oneliners to generate self signed certs with openssl
 
-
 ### _self_ signed certs
 
 you need a cert,

@@ -2,7 +2,6 @@
 
 ## when the layer cache annoys you
 
-
 ### _docker_ caching
 
 `docker build`'s way of working relies heavily on caches and layers to speed things up.

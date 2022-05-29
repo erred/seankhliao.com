@@ -2,7 +2,6 @@
 
 ## notes on reading through the OpenTelemetry specification
 
-
 ### _OpenTelemetry_
 
 The [OpenTelemetry Spec](https://github.com/open-telemetry/opentelemetry-specification)

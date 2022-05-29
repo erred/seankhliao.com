@@ -2,7 +2,6 @@
 
 ## finally a decent way of hosting email
 
-
 ### _email_ hosting
 
 I'm not crazy enough to host my own email for my main account,
@@ -88,28 +87,28 @@ Port 465
 
 ```yaml
 containers:
-- name: maddy
-  image: docker.io/foxcpp/maddy:latest
-  ports:
-  - name: smtp
-    containerPort: 25
-    hostPort: 25
-  - name: submittls
-    containerPort: 465
-    hostPort: 465
-  - name: imaptls
-    containerPort: 993
-    hostPort: 993
-  - name: metrics
-    containerPort: 9749
-  volumeMounts:
-    - name: config
-      mountPath: /data/maddy.conf
-      subPath: maddy.conf
-    - name: data
-      mountPath: /data
-    - name: tls
-      mountPath: /var/run/secrets/tls
+  - name: maddy
+    image: docker.io/foxcpp/maddy:latest
+    ports:
+      - name: smtp
+        containerPort: 25
+        hostPort: 25
+      - name: submittls
+        containerPort: 465
+        hostPort: 465
+      - name: imaptls
+        containerPort: 993
+        hostPort: 993
+      - name: metrics
+        containerPort: 9749
+    volumeMounts:
+      - name: config
+        mountPath: /data/maddy.conf
+        subPath: maddy.conf
+      - name: data
+        mountPath: /data
+      - name: tls
+        mountPath: /var/run/secrets/tls
 ```
 
 ##### _maddy.conf_

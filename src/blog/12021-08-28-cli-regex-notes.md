@@ -2,7 +2,6 @@
 
 ## which flavour of "regex" are we talking about?
 
-
 ### _cli_ tools
 
 The unix way: lots of tiny tools.

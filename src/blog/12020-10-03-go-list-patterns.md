@@ -2,7 +2,6 @@
 
 ## go list pattern coverage
 
-
 ### _list_
 
 The "I know it lists things but I don't remember what" command.

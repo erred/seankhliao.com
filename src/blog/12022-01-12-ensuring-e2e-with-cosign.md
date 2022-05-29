@@ -2,7 +2,6 @@
 
 ## how to make sure e2e tests are run
 
-
 ### _e2e_ tests
 
 So our setup at $work is a bit questionable,

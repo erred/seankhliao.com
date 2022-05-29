@@ -2,7 +2,6 @@
 
 ## protobuf encoding x3
 
-
 ### _protobuf_ encoding
 
 So many docs, but they never show us what it actually looks like

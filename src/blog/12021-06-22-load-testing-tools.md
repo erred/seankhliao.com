@@ -2,8 +2,6 @@
 
 ## surveying the landscape of tools for load testing
 
-
-
 ### _load_ testing
 
 You have a HTTP endpoint,
@@ -16,7 +14,6 @@ Anyway, roll initial impressions
 
 These tools are based around dumping a lot of requests at your server.
 Some are obviously better than others.
-
 
 ##### _hey_
 
@@ -386,7 +383,6 @@ Total Time:             0      347    1,313
 
 ```
 
-
 ##### _siege_
 
 [siege](https://github.com/JoeDog/siege): C cli tool
@@ -431,7 +427,6 @@ Status Codes  [code:count]                      200:334306
 Error Set:
 ```
 
-
 ##### _httperf_
 
 [httperf](https://github.com/httperf/httperf): C cli tool
@@ -471,7 +466,6 @@ These tools are more about simulating complex user flows.
 They usually fall over at actually high loads...
 Maybe it's better to just run multiple of the pure load generators hitting multiple urls.
 And TBH i wouldn't really trust any of these.
-
 
 #### _locust_
 
@@ -538,11 +532,11 @@ Not sure about the SaaS part.
 I guess it works.
 
 ```javascript
-import http from 'k6/http';
-import { sleep } from 'k6';
+import http from "k6/http";
+import { sleep } from "k6";
 
 export default function () {
-  http.get('http://localhost:8080');
+  http.get("http://localhost:8080");
 }
 ```
 
@@ -583,7 +577,6 @@ default ✓ [======================================] 10000 VUs  01m35.9s/10m0s  
      vus............................: 10000   min=9712  max=10000
      vus_max........................: 10000   min=10000 max=10000
 ```
-
 
 ##### _tsung_
 

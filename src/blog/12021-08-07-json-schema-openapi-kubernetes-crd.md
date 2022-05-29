@@ -2,13 +2,11 @@
 
 ## so that's what's in my 10k line json docs...
 
-
 #### _JSON_ Schema
 
 [JSON Schema](https://json-schema.org/)
 describes what your json data looks like.
 Current version is draft `2020-12`/
-
 
 #### _Open_ API
 

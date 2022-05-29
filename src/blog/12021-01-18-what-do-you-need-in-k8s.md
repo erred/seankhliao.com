@@ -2,7 +2,6 @@
 
 ## k8s, the build-a-bear diy PaaS thing
 
-
 ### _kubernetes_
 
 You're thinking of running [kubernetes](https://kubernetes.io/).

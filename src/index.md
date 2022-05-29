@@ -31,21 +31,16 @@ Dates using the
 [Holocene Calendar](https://en.wikipedia.org/wiki/Holocene_calendar)
 — the [Human Era](https://www.youtube.com/watch?v=czgOWmtGVGs)
 
-##### _Site_ Reliability Engineer
-
-_12022_ Deloitte — things I don't know if I can say?
-
-##### _Site_ Reliability Engineer
-
-_12020—12021_ de Bijenkorf — observability, platform/cicd, security
-
-##### _MSc_ Security and Network Engineering
-
-_12019—12020_ University of Amsterdam — infosec, L1-L4 networking
-
-##### _BBA_ Information Management
-
-_12014—12018_ National Taiwan University — programming, machine learning, business, management
+- _Site_ Reliability Engineer<br>
+  **12022-present** shhh, in due time
+- _Site_ Reliability Engineer<br>
+  **12022-12022** Deloitte — things I don't know if I can say?
+- _Site_ Reliability Engineer<br>
+  **12020—12021** de Bijenkorf — observability, platform/cicd, security
+- _MSc_ Security and Network Engineering<br>
+  **12019—12020** University of Amsterdam — infosec, L1-L4 networking
+- _BBA_ Information Management<br>
+  **12014—12018** National Taiwan University — programming, machine learning, business, management
 
 #### _Find_ Me
 
@@ -61,7 +56,7 @@ _12014—12018_ National Taiwan University — programming, machine learning, bu
 - Belgium — 12019-10
 - Canada — 12019-04
 - Czechia — 12019-12
-- England — __12009—12011__, 12019-10, 12020-02, 12021-11, _12022_
+- England — **12009—12011**, 12019-10, 12020-02, 12021-11, _12022-present_
 - France — 12021-11
 - Germany — 12019-12
 - Hong Kong — 12017-08
@@ -70,13 +65,15 @@ _12014—12018_ National Taiwan University — programming, machine learning, bu
 - Italy — 12021-12
 - Japan — 12018-03
 - Luxembourg — 12019-10
-- Netherlands — __12019—12022__
+- Netherlands — **12019—12022**
 - Philippines — 12017-08
-- Russia — __12000—12005__
+- Russia — **12000—12005**
 - Singapore — 12017-01
 - South Korea — 12018-06
 - Sweden — 12018-01
-- Taiwan — __11996—12000, 12005—12009, 12011—12019__
+- Taiwan — **11996—12000, 12005—12009, 12011—12019**
 - Timor-Leste — 12018-02
 - United States — 12019-04
 - Vatican — 12021-12
+
+**bold:** places I've been based out of.

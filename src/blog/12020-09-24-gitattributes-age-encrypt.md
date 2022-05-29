@@ -2,7 +2,6 @@
 
 ## encrypting and decrypting files with gitattributes
 
-
 ### _gitattributes_
 
 What is that file for? Per path settings.
