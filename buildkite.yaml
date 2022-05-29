@@ -1,0 +1,7 @@
+steps:
+  - label: build and push container
+    depends_on: ~
+    commands:
+      - docker build -t ghcr.io/seankhliao/seankhliao.com .
+      - docker push ghcr.io/seankhliao/seankhliao.com
+      - cosign sign --key ~/.ssh/cosign.key ghcr.io/seankhliao/seankhliao.com
