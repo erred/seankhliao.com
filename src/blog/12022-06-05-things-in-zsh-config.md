@@ -64,6 +64,28 @@ but I don't want my config to break every time I clone it onto a new machine.
     || alias ll='ls -alh';
 ```
 
+##### git aliases
+
+turn aliases defined in `~/.config/git/config` into zsh aliases as `g<git alias>`
+
+```zsh
+# short git aliases
+function {
+    local gitconfig="${XDG_CONFIG_HOME}/git/config"
+    [[ -f "${gitconfig}" ]] || gitconfig="${HOME}/.gitconfig"
+    local start_alias=false
+    while read line; do
+        if "${start_alias}"; then
+            [[ "${line}" =~ '\s*\[[a-z]*\]' ]] && return
+            sub="${${line%%=*}// /}"
+            [[ "${sub}" ]] && alias g${sub}="git ${sub}"
+        else
+            [[ $line =~ '\s*\[alias\]' ]] && start_alias=true
+        fi
+    done < "${gitconfig}"
+}
+```
+
 #### _functions_
 
 ##### mkdir and cd

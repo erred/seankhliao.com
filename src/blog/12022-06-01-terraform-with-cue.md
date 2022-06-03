@@ -89,7 +89,7 @@ _cloudbuild_trigger_github: [string]: #CloudBuildGithub
 	push:     _ | *{branch: "^main$"}
 }
 
-resource: google_cloudbuild_trigger: [ for _id, _cb in _cloudbuild_trigger_github {
+resource: google_cloudbuild_trigger: { for _id, _cb in _cloudbuild_trigger_github {
 	"\(_id)": {
 		name:     _cb.repo
 		filename: _cb.filename
@@ -99,7 +99,7 @@ resource: google_cloudbuild_trigger: [ for _id, _cb in _cloudbuild_trigger_githu
 			push: [_cb.push]
 		}]
 	}
-}]
+}}
 ```
 
 and I use it like:
@@ -128,7 +128,7 @@ package infra
   filename?: string
 }
 
-resource: google_cloudbuild_trigger: [ for _id, _cb in _cloudbuild_trigger_github {
+resource: google_cloudbuild_trigger: { for _id, _cb in _cloudbuild_trigger_github {
   "\(_id)": {
     # doesn't work, will fail with can't access field if it's not specified
     filename?: _cb.filename
@@ -138,5 +138,5 @@ resource: google_cloudbuild_trigger: [ for _id, _cb in _cloudbuild_trigger_githu
       filename: _cb.filename
     }
   }
-}]
+}}
 ```
