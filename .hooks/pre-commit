@@ -3,4 +3,4 @@
 set -e
 
 prettier -w .
-git comiit -a --amend --reuse-message || true
+git commit -a --amend --reuse-message || true
