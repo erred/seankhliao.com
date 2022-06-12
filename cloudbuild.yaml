@@ -1,12 +1,12 @@
 steps:
   - id: generate
-    name: 'us-central1-docker.pkg.dev/com-seankhliao/build/blogengine'
+    name: "us-central1-docker.pkg.dev/com-seankhliao/build/blogengine"
     args:
-      - '-gtm=GTM-TLVN7D6'
-      - '-base-url=https://seankhliao.com'
+      - "-gtm=GTM-TLVN7D6"
+      - "-base-url=https://seankhliao.com"
 
   - id: deploy
-    name: 'us-central1-docker.pkg.dev/com-seankhliao/build/firebase'
+    name: "us-central1-docker.pkg.dev/com-seankhliao/build/firebase"
     args:
-      - 'deploy'
-      - '--only=hosting'
+      - "deploy"
+      - "--only=hosting"

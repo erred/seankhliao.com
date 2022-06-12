@@ -69,7 +69,7 @@ resource: google_cloudbuild_trigger: trigger_a: {
 }
 ```
 
-This in and of itself might not be very  DRY,
+This in and of itself might not be very DRY,
 but we can do better
 
 ##### _abstractions_

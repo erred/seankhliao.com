@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -e
-
-prettier -w .
-git commit -a --amend --reuse-message || true
