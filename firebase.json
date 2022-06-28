@@ -36,6 +36,11 @@
         "type": 307
       },
       {
+        "source": "/gh-p-ss",
+        "destination": "/?utm_campaign=sean-snyk\u0026utm_medium=profile\u0026utm_source=github",
+        "type": 307
+      },
+      {
         "source": "/gh-r-er",
         "destination": "/?utm_campaign=erred\u0026utm_medium=readme\u0026utm_source=github",
         "type": 307
