@@ -68,6 +68,7 @@ Dates using the
 - Netherlands — **12019—12022**
 - Philippines — 12017-08
 - Russia — **12000—12005**
+- Scotland — 12022-06
 - Singapore — 12017-01
 - South Korea — 12018-06
 - Sweden — 12018-01
@@ -75,5 +76,6 @@ Dates using the
 - Timor-Leste — 12018-02
 - United States — 12019-04
 - Vatican — 12021-12
+- Wales — 12022-06
 
 **bold:** places I've been based out of.
