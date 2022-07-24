@@ -51,6 +51,9 @@ also uses exponential buckets, but this time choosing a base that guarantees rel
 For a 1% error, `(1+0.1) / (1-0.1) = 1.02`, and so buckets are chosen with `1.02^x`.
 A fixed number of buckets are chosen,
 and the starting buckets (lowest indices) are merged if it ever grows out of space.
+Their [blog post](https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch/)
+mentions somewhere on the order of a few hundred buckets (eg 802 for ns~day scale),
+with their implementation setting a default limit at 2048.
 
 ##### _google_
 
@@ -62,10 +65,21 @@ Google said they use a `(base = minimum_base^2^compression)^x` for buckets.
 After
 [much](https://github.com/open-telemetry/opentelemetry-proto/pull/226)
 [discussion](https://github.com/open-telemetry/oteps/pull/149)
-opentelemetry [defined](https://github.com/open-telemetry/oteps/blob/main/text/0149-exponential-histogram.md)
+opentelemetry [proposed](https://github.com/open-telemetry/oteps/blob/main/text/0149-exponential-histogram.md)
+and finally [defined](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/data-model.md#exponentialhistogram)
 their buckets with
-`base = 2 ^ (2 ^ -baseScale)`.
+`base = 2 ^ (2 ^ -scale)`.
+
+There are apparently no hard limits on bucket count,
+though the [go implementation](https://github.com/open-telemetry/opentelemetry-go/pull/3022)
+chooses a default of 160 buckets,
+adjusting scaling as necessary.
 
 Implementations already exist in the form of:
 [NrSketch](https://github.com/newrelic-experimental/newrelic-sketch-java)
 [DynaHist](https://github.com/dynatrace-oss/dynahist/blob/main/src/main/java/com/dynatrace/dynahist/layout/OpenTelemetryExponentialBucketsLayout.java)
+
+#### others
+
+- [Circlhist](https://arxiv.org/abs/2001.06561)
+- [Dynatrace Dynamic Histograms](https://github.com/dynatrace-oss/dynahist)
