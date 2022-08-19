@@ -44,6 +44,9 @@ With an afterparty at a pub,
 I tried hard to float around and meet people,
 and I did,
 though I may have exhausted the pool of high profile people to point at online.
-(There was [Morgan Adamiec](https://github.com/Morganamilo) from Arch).
+There was [Morgan Adamiec](https://github.com/Morganamilo) from Arch,
+which required checking in the next day, 
+online with the human directory that is [Morten Linderud](https://twitter.com/MortenLinderud)
+to recall who I actually met (usernames and real names are somewhat mismtached...).
 
 A long 15 hour day later, I collapsed onto bed past midnight.
