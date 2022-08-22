@@ -46,12 +46,7 @@ Dates using the
 
 - [Blog](/blog/) — home of random thoughts
 - [Email](mailto:sean+hello@liao.dev) — for me?
-- [Github](https://github.com/seankhliao) — half broken stuff lives here
-- [Twitter](https://twitter.com/seankhliao) — silently stalking more talktive people
-- [LinkedIn](https://linkedin.com/in/seankhliao) — because sometimes i need a job?
-- Libera / OFTC: seankhliao — might be hard to catch when I'm actually online
-- [Github Org](https://github.com/erred) — where old code goes to die
-- [liao.dev](https://liao.dev/) — not quite sure what should go here atm
+- [liao.dev](https://liao.dev/) — all the other places I exist online
 
 ![map of countries I've visited](/static/map.webp)
 
