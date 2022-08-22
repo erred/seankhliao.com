@@ -40,6 +40,10 @@ uhhhh..... influence?
 
 #### _socials_
 
+Apparently I was fairly visible(?) being one of 3 people
+with brightly dyed hair (mine was purple-ish blue).
+Of course we grouped together to chat for a bit.
+
 With an afterparty at a pub,
 I tried hard to float around and meet people,
 and I did,
