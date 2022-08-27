@@ -19,3 +19,7 @@ that though still [experimental on most browsers](https://developer.mozilla.org/
 would allow us to do what we want:
 
 - `body:has(.foo:hover) .foo`: select `.foo` which is a child of `body` when `body` contains a `.foo` in `:hover` state.
+
+_Note:_ the above performs absymally, restricting to direct descendants is much faster:
+
+- `body:has(> .foo:hover) > .foo`
