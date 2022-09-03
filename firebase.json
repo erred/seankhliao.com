@@ -4,6 +4,22 @@
     "public": "dst",
     "cleanUrls": true,
     "trailingSlash": true,
+    "headers": [ 
+      {
+        "source": "/static/*.woff2",
+        "headers": [{
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }]
+      },
+      {
+          "source": "/(icon*|favicon.ico)",
+          "headers": [{
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+          }]
+      }
+    ],
     "redirects": [
       {
         "source": "/ac-p-s",
