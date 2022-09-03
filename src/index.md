@@ -12,7 +12,7 @@ may be possible if you're in London, UK,
 
 This site is the center of my online presence,
 the [blog section](/blog/) contains write ups of experiments with cloud native tech.
-Occasionally, I may appear in [Go](https://go.dev) related projects.
+Occasionally, I may appear in [Go (programming language)](https://go.dev/) related projects.
 
 ##### _Work_
 
