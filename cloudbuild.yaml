@@ -6,7 +6,4 @@ steps:
       - "-base-url=https://seankhliao.com"
 
   - id: deploy
-    name: "us-central1-docker.pkg.dev/com-seankhliao/build/firebase"
-    args:
-      - "deploy"
-      - "--only=hosting"
+    name: "us-central1-docker.pkg.dev/com-seankhliao/build/fbhuploader"
