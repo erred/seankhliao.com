@@ -1,9 +1,2 @@
 steps:
-  - id: generate
-    name: "us-central1-docker.pkg.dev/com-seankhliao/build/blogengine"
-    args:
-      - "-gtm=GTM-TLVN7D6"
-      - "-base-url=https://seankhliao.com"
-
-  - id: deploy
-    name: "us-central1-docker.pkg.dev/com-seankhliao/build/fbhuploader"
+  - name: "us-central1-docker.pkg.dev/com-seankhliao/build/blogengine"
