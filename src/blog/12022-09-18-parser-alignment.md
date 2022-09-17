@@ -29,3 +29,8 @@ for example, if you want to enforce an object has at most 128 keys,
 this can be gamed, just by different representations of the wire format,
 and if you want to enforce a particular value has a given pattern,
 changing the key representation could hide it from any validation functions.
+
+Is there a solution?
+Probably only to not rely on such fragile validation,
+and do everything using the same parser, maybe at the same place.
+Or use unambiguous formats.
