@@ -52,7 +52,8 @@ _note:_ almost all the ones that claim to use "plain functions" as error handler
 - [`_check = func(err error) (T, error) { return _, wrap(err)}`<br>`x, ?err := foo()`](https://gist.github.com/8lall0/cb43e1fa4aae42bc709b138bda02284e): not fully formed idea on return
 - [`handler := func(err error) (T, error) { return^2 _, wrap(err) }`<br>`x, handler(err) := foo()`](https://go.dev/issue/32473), [also](https://go.dev/issue/52416): note nonlocal return
 - [`handler := func(err error, s string) error { return _, fmt.Errorf("%s: %w", s err) }`<br>`x, handler("msg") := foo()`](https://go.dev/issue/43644): also has currying
-- [`handler := func(err error) error { return wrap(err) }`<br>`x := try foo(), handler`](https://go.dev/issue/55026), [also](https://go.dev/issue/56165): note implicit zero value for other returns
+- [`handler := func(err error) error { return wrap(err) }`<br>`x := try foo(), handler`](https://go.dev/issue/55026): note implicit zero value for other returns
+- [`handler := func(err error) error { return wrap(err) }`<br>`x, err := foo()`<br>`try err, handler`](https://go.dev/issue/56165)
 - [`x, err := foo()`<br>`on err return handler()`](https://go.dev/issue/48855): err is magically passed to handler?
 - [`x, !err := foo() throw handler1`<br>`catch handler1 { return wrap(err) }`](https://go.dev/issue/48896)
 - [`goto x, err := foo()`<br>`r:`<br>`return _, wrap(err)`](https://go.dev/issue/53074)
