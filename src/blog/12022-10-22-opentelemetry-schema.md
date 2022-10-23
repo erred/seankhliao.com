@@ -2,7 +2,7 @@
 
 ## What does "schema" mean to you
 
-### Telemetry Schemas
+### _Telemetry_ Schemas
 
 In its current form, 
 OpenTelemetry's [Schemas](https://opentelemetry.io/docs/reference/specification/schemas/overview/)

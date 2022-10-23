@@ -2,7 +2,7 @@
 
 ## Finally something that's not Prometheus
 
-### ServiceMonitors with Prometheus
+### _ServiceMonitors_ with Prometheus
 
 [ServiceMonitors](https://doc.crds.dev/github.com/prometheus-operator/prometheus-operator/monitoring.coreos.com/ServiceMonitor/v1@v0.58.0)
 are CRDs deployed as part of 
@@ -18,7 +18,7 @@ Prometheus reloads its config, and goes on its merry way.
 Note here, the Operator needs access to Kubernetes to read ServiceMonitors,
 and Prometheus also needs access to Kubernetes to discover the Pods behind the Services referenced by ServiceMonitors.
 
-#### OpenTelemetry Collector
+#### _OpenTelemetry_ Collector
 
 [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector)'s
 [prometheus receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/prometheusreceiver)
@@ -30,7 +30,7 @@ and the way the Prometheus Operator interfaces with Prometheus (generate config 
 isn't compatible with the OpenTelemetry Collector
 (prometheus receiver config is inlined, `$` needs escaping to `$$`, no hot reload).
 
-##### Target Allocator
+##### _Target_ Allocator
 
 Instead, it takes a different approach:
 a [target allocator](https://github.com/open-telemetry/opentelemetry-operator/tree/main/cmd/otel-allocator)
