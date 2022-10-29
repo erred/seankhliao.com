@@ -32,9 +32,9 @@ Dates using the
 — the [Human Era](https://www.youtube.com/watch?v=czgOWmtGVGs)
 
 - _Site_ Reliability Engineer<br>
-  **12022-present** Snyk
+  **12022-present** Snyk — Logs, Metrics, Tracing(?), Incident Response, general infra work
 - _Site_ Reliability Engineer<br>
-  **12022-12022** Deloitte
+  **12022-12022** Deloitte — IaC
 - _Site_ Reliability Engineer<br>
   **12020—12021** de Bijenkorf — observability, platform/cicd, security
 - _MSc_ Security and Network Engineering<br>
