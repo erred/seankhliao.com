@@ -271,7 +271,6 @@ func main() {
         }
 }
 
-// runAWS is for running the application in AWS, accessing GCP resources
 func run(lg *slog.Logger) error {
         ctx := context.Background()
 
