@@ -149,15 +149,14 @@ import (
         "net/http"
         "os"
 
-        "cloud.google.com/go/compute/metadata"
-        credentials "cloud.google.com/go/iam/credentials/apiv1"
-        "cloud.google.com/go/iam/credentials/apiv1/credentialspb"
         "github.com/aws/aws-sdk-go-v2/aws"
         "github.com/aws/aws-sdk-go-v2/config"
         "github.com/aws/aws-sdk-go-v2/credentials/stscreds"
         "github.com/aws/aws-sdk-go-v2/service/s3"
         "github.com/aws/aws-sdk-go-v2/service/sts"
+        "golang.org/x/oauth2"
         "golang.org/x/exp/slog"
+        "google.golang.org/api/idtoken"
 )
 
 func main() {
@@ -174,47 +173,17 @@ func main() {
 }
 
 type GCPTokenGenerator struct {
-        c *credentials.IamCredentialsClient
-        r *credentialspb.GenerateIdTokenRequest
-}
-
-func NewGCPTokenGenerator(ctx context.Context, audience string) (*GCPTokenGenerator, error) {
-        // using GCP metadata server
-        // get the email address of the GCP service account associated with this pod
-        mc := metadata.NewClient(http.DefaultClient)
-        saEmail, err := mc.Email("")
-        if err != nil {
-                return nil, fmt.Errorf("get default service account email: %w", err)
-        }
-
-        // we need a credentials client for generating id tokens
-        client, err := credentials.NewIamCredentialsClient(ctx)
-        if err != nil {
-                return nil, fmt.Errorf("get gcp iam credentials client: %w", err)
-        }
-
-        // prepare an id token request we can reuse later
-        request := &credentialspb.GenerateIdTokenRequest{
-                Name:         "projects/-/serviceAccounts/" + saEmail,
-                Audience:     audience,
-                IncludeEmail: true,
-        }
-
-        return &GCPTokenGenerator{
-                c: client,
-                r: request,
-        }, nil
+        ts oauth2.TokenSource
 }
 
 // GetIdentityToken implements the stscreds.IdentityTokenGenerator interface for refreshing
 // identiy tokens on demand.
 func (g *GCPTokenGenerator) GetIdentityToken() ([]byte, error) {
-        ctx := context.Background()
-        resp, err := g.c.GenerateIdToken(ctx, g.r)
+        token, rer := g.ts.Token()
         if err != nil {
                 return nil, fmt.Errorf("generate gcp id token: %w", err)
         }
-        return []byte(resp.Token), nil
+        return []byte(token.AccessToken), nil
 }
 
 func run(lg *slog.Logger) error {
@@ -225,7 +194,7 @@ func run(lg *slog.Logger) error {
 
         // setup a GCP id token generator
         ctx := context.Background()
-        tokenGen, err := NewGCPTokenGenerator(ctx, idTokenAudience)
+        ts, err := idtoken.NewTokenSource(ctx, idTokenAudience)
         if err != nil {
                 return fmt.Errorf("create GCP id token generator: %w", err)
         }
@@ -245,7 +214,7 @@ func run(lg *slog.Logger) error {
                 stscreds.NewWebIdentityRoleProvider(
                         sts.NewFromConfig(cfg)
                         targetAWSRoleARN, 
-                        tokenGen,
+                        &GCPTokenGenerator{ts: ts},
                 ),
         )
 
