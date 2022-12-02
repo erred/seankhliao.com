@@ -104,13 +104,6 @@ resource "google_service_account" "s" {
   account_id = "gcp-service-account-name"
 }
 
-# permissions to create tokens on itself
-resource "google_service_account_iam_member" "s" {
-  service_account_id = google_service_account.s.id
-  member             = "serviceAccount:${google_service_account.s.email}"
-  role               = "roles/iam.serviceAccountTokenCreator"
-}
-
 # granting the kubernetes service account permissions to use this service account
 resource "google_service_account_iam_member" "gke" {
   service_account_id = google_service_account.s.id
@@ -179,7 +172,7 @@ type GCPTokenGenerator struct {
 // GetIdentityToken implements the stscreds.IdentityTokenGenerator interface for refreshing
 // identiy tokens on demand.
 func (g *GCPTokenGenerator) GetIdentityToken() ([]byte, error) {
-        token, rer := g.ts.Token()
+        token, err := g.ts.Token()
         if err != nil {
                 return nil, fmt.Errorf("generate gcp id token: %w", err)
         }
