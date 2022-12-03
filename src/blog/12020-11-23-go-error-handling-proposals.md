@@ -35,8 +35,8 @@ _note:_ almost all the ones that claim to use "plain functions" as error handler
 
 ###### _predeclared_ handlers
 
-- [`handle err { return _, wrap(err) }`<br>`x := check foo()`](https://go.googlesource.com/proposal/+/master/design/go2draft-error-handling.md): block scoped
-- [`handle err { return _, wrap(err) }`<br>`x, # := foo()`](https://gist.github.com/oktalz/f04f36a3c2f61af22c7a6e06095d18eb)
+- [`handle err { return _, wrap(err) }`<br>`x := check foo()`](https://go.googlesource.com/proposal/+/master/design/go2draft-error-handling.md)
+- [`handle err { return _, wrap(err) }`<br>`x, # := foo()`](https://gist.github.com/oktalz/f04f36a3c2f61af22c7a6e06095d18eb): 
 - [`handle func(err error) (T, error) { return _, wrap(err) }`<br>`x, ? := foo()`](https://github.com/rockmenjack/go-2-proposals/blob/master/error_handling.md)
 - [`watch err { if err != nil { return _, wrap(err) } }`<br>`x, err != foo()`](https://go.dev/issue/40821)
 - [`expect err != nil { return _, wrap(err) }`<br>`x, err := foo()`](https://go.dev/issue/32804)
