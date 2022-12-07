@@ -93,7 +93,7 @@ some rely on `wrap` being smart and passing through `nil` (so not `fmt.Errorf`),
 - [`x := check wrap() foo()`](https://gist.github.com/jozef-slezak/93a7d9d3d18d3fce3f8c3990c031f8d0), [also](https://gist.github.com/morikuni/bbe4b2b0384507b42e6a79d4eca5fc61)
 - [`x := check foo() with wrap(err)`](https://go.dev/issue/49091)
 - [`x := foo() ? wrap()`](https://gist.github.com/gregwebs/02479eeef8082cd199d9e6461cd1dab3)
-- [`x := foo() or wrap()`](https://go.dev/issue/36338)
+- [`x := foo() or wrap`](https://go.dev/issue/36338)
 - [`x := foo() || wrap(err)`](https://go.dev/issue/21161)
 - [`x := foo() on_error err fail wrap(err)`](https://medium.com/@peter.gtz/thinking-about-new-ways-of-error-handling-in-go-2-e56d116952f1)
 - [`x := foo() onerr return _, wrap(err)`](https://go.dev/issue/32848)
