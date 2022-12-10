@@ -63,9 +63,9 @@ some rely on `wrap` being smart and passing through `nil` (so not `fmt.Errorf`),
 
 - [`x, err := foo()`<br>`reflow _, wrap(err)`](https://go.dev/issue/21146): implicit `err != nil` and return
 - [`x, err := foo()`<br>`refuse _, wrap(err)`](https://gist.github.com/alexhornbake/6a4c1c6a0f2a063da6dda1bf6ec0f5f3)
-- [`x, err := foo()`<br>`pass _, wrap(err)`](https://go.dev/issue/37141)
+- [`x, err := foo()`<br>`pass wrap(err)`](https://go.dev/issue/37141)
 - [`x, err := foo()`<br>`ereturn _, wrap(err)`](https://go.dev/issue/38349)
-- [`x, err := foo()`<br>`err ?: return _, wrap(err)`](https://go.dev/issue/32946)
+- [`x, err := foo()`<br>`err ?: return _, wrap(err)`](https://go.dev/issue/25632)
 - [`x, err := foo()`<br>`on err, return _, wrap(err)`](https://go.dev/issue/32611)
 - [`x, err := foo()`<br>`on err return handler()`](https://go.dev/issue/48855)
 - [`x, err := foo()`<br>`err ? { return _, wrap(err) }`](https://go.dev/issue/33067)
