@@ -47,6 +47,7 @@ Dates using the
 - [Blog](/blog/) — home of random thoughts
 - [Email](mailto:sean+hello@liao.dev) — for me?
 - [liao.dev](https://liao.dev/) — all the other places I exist online
+<a rel="me" href="https://hachyderm.io/@seankhliao"></a>
 
 ![map of countries I've visited](/static/map.webp)
 
