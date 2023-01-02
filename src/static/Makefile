@@ -54,3 +54,14 @@ merged-analytics.avif merged-analytics.webp: merged-analytics.png
 spotify-code: spotify-code.avif
 spotify-code.avif spotify-code.webp: spotify-code.png
 	convert $? -write spotify-code.avif spotify-code.webp
+
+.PHONY: earbug-2022
+earbug-2022: earbug-2022-artist.avif earbug-2022-consistency.avif earbug-2022-time.avif earbug-2022-track.avif
+earbug-2022-artist.avif earbug-2022-artist.webp: earbug-2022-artist.png
+	convert $? -write earbug-2022-artist.avif earbug-2022-artist.webp
+earbug-2022-consistency.avif earbug-2022-consistency.webp: earbug-2022-consistency.png
+	convert $? -write earbug-2022-consistency.avif earbug-2022-consistency.webp
+earbug-2022-time.avif earbug-2022-time.webp: earbug-2022-time.png
+	convert $? -write earbug-2022-time.avif earbug-2022-time.webp
+earbug-2022-track.avif earbug-2022-track.webp: earbug-2022-track.png
+	convert $? -write earbug-2022-track.avif earbug-2022-track.webp

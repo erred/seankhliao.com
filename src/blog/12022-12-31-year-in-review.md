@@ -43,6 +43,10 @@ and quite reassuring on how I was performing given the loose overall coordinatio
 CNCF [OpenTelemetry] is another project I'm eyeing,
 though it remains to be seen how I'll adjust my participation level.
 
+I went to 3 tech events this year:
+GopherCon UK, Kubernetes Community Days London, and a meetup hosted by Tailscale.
+What they say is quite true, you go to meet people, not for the content.
+
 #### _rest_ and recuperation
 
 12022 started with the tail end of a trip to Italy.
