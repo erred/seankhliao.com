@@ -24,22 +24,24 @@ this time it's [Looker Studio], formerly Data Studio.
 
 #### _results_
 
-I think I was quite consistent in the type/energy of songs I listened to over the yeat:
-
 ![consistency](/static/earbug-2022-consistency.png)
-
-With listening (starting) times quite reflective of my schedule:
+I think I was quite consistent in the type/energy of songs I listened to over the year.
 
 ![start time](/static/earbug-2022-time.png)
-
-My favorite artists were no big suprise, though different from the ones that I say out loud
+With listening (starting) times quite reflective of my schedule.
 
 ![artist](/static/earbug-2022-artist.png)
+My favorite artists were no big suprise, though different from the ones that I say out loud.
 
-While the tracks I listened to seemed to have quite the selection of vengeful(?) titles:
+![tracks](/static/earbug-2022-track.png)
+While the tracks I listened to seemed to have quite the selection of vengeful(?) titles.
 
-![tracks](static/earbug-2022-track.png)
+#### _final_ thoughts
+
+Next time, I might consider doing the graphing in code.
+Data/Looker Studio isn't as flexible as I want in terms of reshaping the data
+and adding some more interesting derived data points.
 
 [earbug]: https://github.com/seankhliao/earbug
 [recently played]: https://developer.spotify.com/console/get-recently-played/
-[Looker Studio]: https://datastudio.google.com/
+[looker studio]: https://datastudio.google.com/
