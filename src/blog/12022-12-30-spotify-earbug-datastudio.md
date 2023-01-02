@@ -25,15 +25,19 @@ this time it's [Looker Studio], formerly Data Studio.
 #### _results_
 
 ![consistency](/static/earbug-2022-consistency.png)
+
 I think I was quite consistent in the type/energy of songs I listened to over the year.
 
 ![start time](/static/earbug-2022-time.png)
+
 With listening (starting) times quite reflective of my schedule.
 
 ![artist](/static/earbug-2022-artist.png)
+
 My favorite artists were no big suprise, though different from the ones that I say out loud.
 
 ![tracks](/static/earbug-2022-track.png)
+
 While the tracks I listened to seemed to have quite the selection of vengeful(?) titles.
 
 #### _final_ thoughts
