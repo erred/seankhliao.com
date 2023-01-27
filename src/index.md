@@ -44,9 +44,10 @@ Dates using the
 
 #### _Find_ Me
 
-- [Blog](/blog/) — home of random thoughts
-- [Email](mailto:sean+hello@liao.dev) — for me?
+- [blog](/blog/) — log of experiments
+- [sean.liao.dev](https://sean.liao.dev/) — log of cultural events
 - [liao.dev](https://liao.dev/) — all the other places I exist online
+- [email](mailto:sean+hello@liao.dev) — for me?
 <a rel="me" href="https://hachyderm.io/@seankhliao"></a>
 
 ![map of countries I've visited](/static/map.webp)
