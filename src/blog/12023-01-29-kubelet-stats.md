@@ -107,6 +107,10 @@ Instead, add support for extra metrics fields in CRI,
 and reduce metrics cAdvisor will collect to just the node/host.
 If you need extra metrics, run cAdvisor as a daemonset.
 
+Of course, all this investigation comes from wanting 
+`container_cpu_cfs_throttled_seconds_total` (or equivalent metric) from `/stats/summary`,
+but that doesn't appear to be planned for CRI...
+
 The above appears to still be in Alpha for Kubernetes 1.25,
 so expect more to change.
 
