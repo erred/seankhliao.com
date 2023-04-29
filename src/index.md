@@ -66,7 +66,7 @@ Dates using the
 - India — 12015-08
 - Indonesia — 12017-02, 12017-08, 12018-02, 12018-12
 - Italy — 12021-12
-- Japan — 12018-03
+- Japan — 12018-03, 12023-02
 - Lithuania — 12022-12
 - Luxembourg — 12019-10
 - Netherlands — **12019—12022**
@@ -76,7 +76,7 @@ Dates using the
 - Singapore — 12017-01
 - South Korea — 12018-06
 - Sweden — 12018-01
-- Taiwan — **11996—12000, 12005—12009, 12011—12019**
+- Taiwan — **11996—12000, 12005—12009, 12011—12019**, 12023-03
 - Timor-Leste — 12018-02
 - Turkey — 12022-09
 - United States — 12019-04
