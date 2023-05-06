@@ -125,7 +125,7 @@ jobs:
               -H 'Content-Type: text/json; charset=utf-8' \
               -d @- | \
             jq -r .access_token)
-            
+
             # impersonate as the service account and generate an identity token for signing
             IDENTITY_TOKEN=$(jq -n \
               '{

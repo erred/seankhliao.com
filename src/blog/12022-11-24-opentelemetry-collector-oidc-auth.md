@@ -40,12 +40,12 @@ eyJhbGci------------J0eXAiOiJKV1QifQ.eyJhdWQi---------xODYifQ.FfpWwTlS24zl------
 
 #### _collector_
 
-On the collector side we'll nned the 
+On the collector side we'll nned the
 [oidcauth extension](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/oidcauthextension)
 configured for Google's accounts endpoint,
 and with the right header extractor.
 
-The verified data is stored in the 
+The verified data is stored in the
 [context's authdata](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/1ab871940dbe9fa728fb5e7e6b4d5248fb91d454/extension/oidcauthextension/authdata.go#L27)
 which can be extracted with the processors into proper attributes,
 something you'll want to do before reshaping/regrouping data with batch/groupbyX.

@@ -9,7 +9,7 @@ maybe a webhook handler to automate something,
 or a web page to display some information.
 These are mostly all applications that work over HTTP(S),
 so, after 2 or 3 of these,
-I usually start thinking about factoring the common parts 
+I usually start thinking about factoring the common parts
 into a library,
 and for that I've bounced between using a library style
 and a framework style.

@@ -2,7 +2,7 @@
 
 ## internal deployment of pkg.go.dev
 
-### _pkgsite,_ internally 
+### _pkgsite,_ internally
 
 [pkgsite] is the code that powers [pkg.go.dev],
 serving rendered documentation of versioned Go modules.
@@ -39,7 +39,7 @@ Data is inserted by worker goroutines from [cmd/frontend], [cmd/worker], or tool
 
 [postgres]: https://www.postgresql.org/
 
-[redis] is an optional dependency to frontend, 
+[redis] is an optional dependency to frontend,
 used for caching rendered versions of web pages.
 
 [redis]: https://redis.io/
@@ -49,7 +49,7 @@ Without this, frontend uses an in memory queue and runs embedded instances of wo
 
 [GCP Cloud Tasks]: https://cloud.google.com/tasks
 
-[cmd/worker] is an optional, stateless worker that pulls from GCP Cloud Tasks to process modules 
+[cmd/worker] is an optional, stateless worker that pulls from GCP Cloud Tasks to process modules
 (pull from proxy, process, insert into DB).
 Locally it also uses an in memory queue with sub-workers.
 It exposes an HTTP API to fetch, (re)process, and delete modules.
@@ -67,7 +67,7 @@ and preemptively processes them.
 ##### _module_ proxy
 
 The worker code in pkgsite only knows how to fetch modules through the proxy protocol.
-Thus to process private modules, 
+Thus to process private modules,
 it's necessary to run a module proxy wich will own the credentials to your vcs.
 
 [athens] is one such choice.

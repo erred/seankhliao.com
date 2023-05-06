@@ -33,7 +33,7 @@ there wasn't much for me to do there.
 On my current work.
 I think mixed might be a good way to put thing.
 It's larger, with much more momentumn behind every project, every decision.
-The company as a whole trying to be enterprise, 
+The company as a whole trying to be enterprise,
 but that mindset might not have permeated in to the lower ranks yet.
 
 On open source:

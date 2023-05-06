@@ -12,18 +12,19 @@ with optional selection fields to only process some data.
 Regardless of processing result, all data passes through.
 
 The filtering logic is:
+
 - If `include` section, and not explicityly included, skip
 - If `exclude` section, and explicityly excluded, skip
 - keep
 
-
 #### _Filter_ Processor
 
 The [filterprocessor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/filterprocessor)
-uses the same include/exclude config as the attributesprocessor, 
+uses the same include/exclude config as the attributesprocessor,
 but split into distinct metrics/logs/spans subsections.
 
 The logic is:
+
 - If `include` section, and not explicitly included, drop
 - If `exclude` section, and explicitly excluded, drop
 - keep

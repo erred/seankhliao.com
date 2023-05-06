@@ -16,7 +16,7 @@ What's the scope of _significant?_
 I think observable by users,
 whether internal or external is a good line in the sand to draw.
 
-_Response_ covers 
+_Response_ covers
 detection, communication, coordination, mitigation, remediation, retrospectives, and any follow up work.
 From "how do you know something is broken",
 to "who should handle this",
@@ -24,7 +24,7 @@ and "what should I do".
 You can only dream up of so many scenarios beforehand,
 much less remember the perfect course of action for each when you're stressed.
 So while there will be runbooks for the common things,
-people's judgement will always be needed for the unforeseen 
+people's judgement will always be needed for the unforeseen
 (otherwise we'd just automate it).
 
 _Management_ is interesting.
@@ -57,7 +57,7 @@ but that's about it for automation.
 Now it's back to the human,
 who's now responsible for pulling relevant people in investigate.
 Ideally someone should be chosen to lead an incident,
-and delegate responsibilities to other people, 
+and delegate responsibilities to other people,
 such as communication.
 We pay people to be "on call" for this.
 

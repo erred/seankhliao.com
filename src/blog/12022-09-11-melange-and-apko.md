@@ -6,7 +6,7 @@
 
 [apko](https://apko.dev/)
 and [melange](https://github.com/chainguard-dev/melange)
-are 2 interesting tools 
+are 2 interesting tools
 [coming from](https://blog.chainguard.dev/introducing-apko-bringing-distroless-nirvana-to-alpine-linux/)
 [chainguard.dev](https://chainguard.dev/)
 aiming for declarative builds of alpine packages and containers based on the apk ecosystem.
@@ -14,9 +14,9 @@ aiming for declarative builds of alpine packages and containers based on the apk
 #### _melange_
 
 `melange` is for building apk packages, generating, and signing repository indexes.
-It consists of: package metadata, 
+It consists of: package metadata,
 packages to be installed in the build environment,
-and a linear pipeline of steps, 
+and a linear pipeline of steps,
 using either reusable stages declared in yaml on disk,
 or inline scripts.
 A config for building a Go application might look like:
@@ -39,7 +39,7 @@ package:
   #   runtime:
   #   provides:
   # scriptlets:
-  #   pre-install: 
+  #   pre-install:
   #   post-install:
   #   ...
 
@@ -101,7 +101,7 @@ contents:
     - https://dl-cdn.alpinelinux.org/alpine/edge/main
     - https://dl-cdn.alpinelinux.org/alpine/edge/community
     # syntax for local repo
-    - '@local /work/build/packages'
+    - "@local /work/build/packages"
   packages:
     - alpine-baselayout
     - weechat

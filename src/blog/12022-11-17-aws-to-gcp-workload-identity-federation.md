@@ -66,7 +66,7 @@ resource "google_service_account" "s" {
 resource "google_service_account_iam_member" "s" {
   service_account_id = google_service_account.a.id
   role               = "roles/iam.workloadIdentityUser"
-  # principalSet matches anything with the given attribute 
+  # principalSet matches anything with the given attribute
   # here we're matching on assumed role arn
   member             = "principalSet://iam.googleapis.com/projects/${local.project_number}/locations/global/workloadIdentityPools/workload-pool-id/attribute.aws_role/arn:aws:sts::account:assumed-role/role-for-irsa"
 }
@@ -225,7 +225,7 @@ func run(lg *slog.Logger) error {
 
 #### _AWS_ code setup - manual token exchange
 
-If for whatever reason, IMDSv2 is broken on your cluster 
+If for whatever reason, IMDSv2 is broken on your cluster
 (maybe someone forgot to set `ec2:MetadataHttpPutResponseHopLimit` to 2),
 you can do a manual token exchange to generate the access tokens for sdk use.
 

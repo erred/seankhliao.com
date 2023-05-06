@@ -13,15 +13,15 @@ to survive, there must be a market to consume,
 and more importantly, a strong market to sustain it,
 also known as [product-market fit].
 A product (usually) isn't just a technical capability/feature,
-after all, we've all seen the graveyard of capable tools 
+after all, we've all seen the graveyard of capable tools
 that see no adoption because it's too hard to use.
 The user interface/experience is, a lot of the time, what people will remember.
 
 #### _internal_ software
 
-As a site reliability engineer, SRE, 
+As a site reliability engineer, SRE,
 we're most commonly positioned as an enablement team:
-producing standards, best practices, guidance, 
+producing standards, best practices, guidance,
 and self serve tooling to enable product teams tp work autonomously.
 
 I think this requires a bit of a different mindset from the startup mvp product engineer:

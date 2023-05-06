@@ -5,7 +5,7 @@
 ### _servicemonitors_ into datadog
 
 As part of $work's somewhat rushed replatforming of observability tooling on Datadog,
-we've need to ingest the metrics currently produced by our applications 
+we've need to ingest the metrics currently produced by our applications
 using Prometheus Exposition Format into Datadog.
 
 This represents quite a few challenges:
@@ -32,7 +32,7 @@ We've had issues, such as:
 runaway resource consumption for the allocator component
 (fixed by implementing relabeling earlier so it returns less data),
 unstable conversion from cumulative to delta models
-(use consistent-hashing allocation, 
+(use consistent-hashing allocation,
 ongoing discussion for [conversion drops](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/20770)).
 But it seems to mostly work fairly reliably at this point.
 

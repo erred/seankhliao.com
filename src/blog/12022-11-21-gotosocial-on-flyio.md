@@ -73,7 +73,7 @@ app = "estherian"
 ```
 
 Once it's running,
-create your user following the 
+create your user following the
 [standard documentation](https://docs.gotosocial.org/en/latest/installation_guide/docker/).
 
 ```sh

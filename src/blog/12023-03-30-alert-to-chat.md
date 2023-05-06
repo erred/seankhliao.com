@@ -1,6 +1,6 @@
 # alert to chat
 
-##  what i actually want from a chat integration
+## what i actually want from a chat integration
 
 ### _alert_ to chat notification
 
@@ -25,11 +25,12 @@ and it's updated when it's resolved.
 Example:
 
 > ✅ Resolved 💛 P3 X is broken - tag1 (edited)
-> ❌ Firing ❤️  P1 Y is broken - tag1, tag2
+> ❌ Firing ❤️ P1 Y is broken - tag1, tag2
 
 #### _solutions_
 
 What I need for this is:
+
 - A webhook endpoint to receive alert events
 - An app in the chat system (usually required to update prior messages)
 - A data store to map alert IDs to sent chat IDs

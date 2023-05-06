@@ -19,7 +19,7 @@ That has a more or less linear flow of events,
 if an event matches a transformation, it's processed,
 otherwise the transform is bypassed and everything continues on the nest stage.
 
-Fluentd has a new setup based on 
+Fluentd has a new setup based on
 [labels](https://docs.fluentd.org/quickstart/life-of-a-fluentd-event#labels),
 where you point to the next grouping of processors.
 This allows you to build out a directed acyclic graph (DAG) of transformations,

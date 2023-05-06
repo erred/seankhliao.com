@@ -9,7 +9,7 @@ there's a nice buzz to them.
 They don't necessarily always have decent wifi...
 so using my phone as a hotspot has been a must.
 
-The problem is that since switching to a  Pixel 7,
+The problem is that since switching to a Pixel 7,
 my laptops could never stay connected to the hotspot.
 They would just drop, and flipping every toggle in the hotspot settings didn't help.
 

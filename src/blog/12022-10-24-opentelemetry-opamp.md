@@ -12,7 +12,7 @@ But what if that's a bit too cumbersome,
 or if you have different agents which require different config file changes?
 [OpAMP](https://github.com/open-telemetry/opamp-spec)
 aims to be the protocol for managing them,
-allowing remote config and status reporting capabilities over HTTP 
+allowing remote config and status reporting capabilities over HTTP
 (agent polls control plane)
 or WebSockets.
 

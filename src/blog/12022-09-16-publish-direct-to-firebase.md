@@ -32,7 +32,7 @@ Also, why bother writing to the disk anyway?
 #### _upload_ from memory
 
 Thankfully, firebase provides [API access](https://firebase.google.com/docs/hosting/api-deploy),
-So no need to download their node.js based cli 
+So no need to download their node.js based cli
 with a bunch of features you're not going to use,
 just render into an in memory file system,
 check which files you need to send,

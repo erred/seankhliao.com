@@ -7,12 +7,12 @@ more than just https
 ### _grpc_ secure through tailscale funnel
 
 [Tailscale Funnel](https://tailscale.com/blog/introducing-tailscale-funnel/)
-is a feature that lets you expose endpoints in you private tailnet (vpn) publicly 
+is a feature that lets you expose endpoints in you private tailnet (vpn) publicly
 via Tailscale operated proxies that do SNI based routing.
 
 [tsnet](https://pkg.go.dev/tailscale.com@v1.38.4/tsnet)
 is their library to run your excutable as its own node,
-so you can have a self contained binary that will 
+so you can have a self contained binary that will
 connect and register itself with the Tailscale control plane
 and expose a stable endpoint.
 
@@ -25,7 +25,6 @@ which wants to be in control over the TLS handshake.
 Thankfully, we can look into the implementation for ListenFunnel,
 and see it doesn't need anything that isn't publicly available.
 So...
-
 
 ```go
 package main

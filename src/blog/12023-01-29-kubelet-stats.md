@@ -19,7 +19,7 @@ These are the endpoints exposed by kubelet
 (test with `kubectl get --raw "/api/v1/nodes/$NODE_NAME/proxy/$ENDPOINT"`):
 
 - `/metrics`: (prometheus) metrics about kubelet itself (go runtime, controller, http)
-- `/metrics/cadvisor`: (prometheus) 
+- `/metrics/cadvisor`: (prometheus)
   metrics from an embedded [cAdvisor] instance about the node, pod, and containers
 - `/metrics/probes`: (prometheus) histograms about container probes
 - `/metrics/resource`: (prometheus) metrics from Container Runtime Interface (CRI)
@@ -32,7 +32,7 @@ These are the endpoints exposed by kubelet
 The [kubeletstats] receiver would appear to be the primary receiver to use for collecting metrics from kubelet.
 This reads data from `/stats/summary`.
 It only works for a single kubelet though, which is fine if you run the collector as a daemonset,
-but alternatively, 
+but alternatively,
 you could use the [receivercreator] in combination with a [k8sobserver] to generate subreceivers for nodes.
 Example:
 
@@ -50,7 +50,7 @@ receivers:
     kubeletstats:
       rule: type == "k8s.node"
       config:
-        endpoint: '`endpoint`:`kubelet_endpoint_port`'
+        endpoint: "`endpoint`:`kubelet_endpoint_port`"
         extra_metadata_labels:
           - container.id
         metric_groups:
@@ -79,18 +79,18 @@ Of course, you could just fall back to what prometheus has been doing all along:
 
 ```yaml
 receivers:
-    prometheus:
-      config:
-        scrape_configs:
-          - job_name: k8s
-            kubernetes_sd_configs:
-              - role: node
-            scheme: https
-            metrics_path: /metrics/cadvisor
-            tls_config:
-              ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-            authorization:
-              credentials_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+  prometheus:
+    config:
+      scrape_configs:
+        - job_name: k8s
+          kubernetes_sd_configs:
+            - role: node
+          scheme: https
+          metrics_path: /metrics/cadvisor
+          tls_config:
+            ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+          authorization:
+            credentials_file: /var/run/secrets/kubernetes.io/serviceaccount/token
 ```
 
 #### _future_ changes
@@ -107,13 +107,12 @@ Instead, add support for extra metrics fields in CRI,
 and reduce metrics cAdvisor will collect to just the node/host.
 If you need extra metrics, run cAdvisor as a daemonset.
 
-Of course, all this investigation comes from wanting 
+Of course, all this investigation comes from wanting
 `container_cpu_cfs_throttled_seconds_total` (or equivalent metric) from `/stats/summary`,
 but that doesn't appear to be planned for CRI...
 
 The above appears to still be in Alpha for Kubernetes 1.25,
 so expect more to change.
-
 
 [OpenTelemetry Collector]: https://opentelemetry.io/docs/collector/
 [cAdvisor]: https://github.com/google/cadvisor

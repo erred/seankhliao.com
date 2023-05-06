@@ -6,10 +6,10 @@
 
 [fly.io](https://fly.io/) is a compute platform that runs your apps
 from container images as micro vms on firecracker.
-Their have docs on how their 
+Their have docs on how their
 [private networking](https://fly.io/docs/reference/private-networking/)
 uses wireguard,
-and an interesting blog post on 
+and an interesting blog post on
 [embedding wireguard](https://fly.io/blog/ssh-and-user-mode-ip-wireguard/) into their CLI.
 
 But what I want is a vpn server that will forward all my traffic,
@@ -97,7 +97,6 @@ app = "app-name"
 ```
 
 Some commands to setup the app:
-
 
 ```sh
 $ flyctl apps create app-name

@@ -4,7 +4,7 @@
 
 ### _fork_ to background in Go
 
-So, you want to execute a process, 
+So, you want to execute a process,
 forking it to the background and keep it running after the parent process exits.
 
 First.... try not to do this,

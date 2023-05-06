@@ -15,7 +15,7 @@ Server pods may be cycled and scaled up/down.
 
 So in HTTP/1.1 is fairly simple:
 open a TCP connection, write your payload across.
-If you need to make HTTP requests in parallel, 
+If you need to make HTTP requests in parallel,
 open more TCP connections.
 
 ##### _http1_ in Go
@@ -23,7 +23,7 @@ open more TCP connections.
 Go's net/http implementation doesn't cache name resolution
 (mapping DNS names to IP addresses),
 but does maintain a connection pool.
-This generally results in connections being cycled 
+This generally results in connections being cycled
 as connections exceed the pool size,
 or they hit the idle timeout and are closed.
 New connections are made on-demand, re-resolving names to addresses,
@@ -34,9 +34,9 @@ and picking a random one.
 As server Pods in K8s come and Go,
 this system generally works well with the Service objects,
 both in ClusterIP and headless mode.
-In ClusterIP mode, as connections are created, 
+In ClusterIP mode, as connections are created,
 the CNI (or kube-proxy) will assign the connection to a random backend,
-while in headless mode, 
+while in headless mode,
 the lack of DNS caching means a new choice is made every time with an up to date list of backends.
 
 #### _gRPC_
@@ -49,7 +49,7 @@ This allows parallel requests to utilizie the same underlying TCP connection.
 
 ##### _gRPC_ in Go
 
-The grpc-go implementation uses its own implementations 
+The grpc-go implementation uses its own implementations
 for both name resolution and load balancing (connection pooling).
 
 [gRPC Name Resolution] is the canonical doument for how things should work.
@@ -95,7 +95,7 @@ leaving the load balancing to gRPC's native load balancers.
 [kuberesolver]: https://github.com/sercand/kuberesolver
 
 opentelemetry-collector's [loadbalancingexporter] takes a different approach
-and re-resolves targets on a timer, 
+and re-resolves targets on a timer,
 maintaining a pool of gRPC conns to load balance between on the application level.
 
 [loadbalancingexporter]: https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/exporter/loadbalancingexporter/loadbalancer.go
@@ -107,7 +107,7 @@ if you implement an appropriate control server.
 
 Slightly overloaded term, but running a L7 gRPC aware load balancer can help
 (or in other words, make it someone else's problem).
-But not one of those that lives in cluster, 
+But not one of those that lives in cluster,
 as you'll have the same issue of balancing traffic to the load balancer pods,
 unless you think not having to deserialize requests gives you enough performance headroom.
 

@@ -17,11 +17,11 @@ or something similar.
 If you look around long enough,
 you'll eventually realize that some providers are special and built in,
 like the [Google provider](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)
-needed  for access from GCP.
+needed for access from GCP.
 
 All we need is a Role for other resources/policies to reference when granting permissions,
 and a policy on the role detailing what to allow to assume the role.
-To control who to allow, 
+To control who to allow,
 we can use [identity token fields](https://cloud.google.com/docs/authentication/token-types#id-contents),
 though for some reason, the audience is under `oaud`.
 In terraform this looks like:
@@ -206,7 +206,7 @@ func run(lg *slog.Logger) error {
                 // refreshing tokens on demand.
                 stscreds.NewWebIdentityRoleProvider(
                         sts.NewFromConfig(cfg)
-                        targetAWSRoleARN, 
+                        targetAWSRoleARN,
                         &GCPTokenGenerator{ts: ts},
                 ),
         )

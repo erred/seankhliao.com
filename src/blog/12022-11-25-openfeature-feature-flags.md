@@ -7,7 +7,7 @@
 [OpenFeature](https://openfeature.dev/)
 appears to be the feature flagging industry's attempt at some standardization.
 It claims "unified API and SDK",
-from what I can tell, that API is library API within the SDK, 
+from what I can tell, that API is library API within the SDK,
 and not any particular network protocol.
 
 #### _Using_ it
@@ -60,12 +60,12 @@ and you have to code defensively against it.
 
 #### _flagd_
 
-[flagd](https://github.com/open-feature/flagd) 
+[flagd](https://github.com/open-feature/flagd)
 looks to be their attempt at a server / network protocol for flags that can actually change values.
 It takes in config from different sources (files, k8s CRD, etc),
 and exposes them over multiple protocols using buf's connect-go library
 with a gRPC based API.
-The [api spec](https://buf.build/open-feature/flagd/docs/main:schema.v1) 
+The [api spec](https://buf.build/open-feature/flagd/docs/main:schema.v1)
 seems to only be available via buf.build.
 
 The file based configuration exposes more people to the horrors of

@@ -58,9 +58,9 @@ spec:
 
 #### _strategic_ merge patch
 
-One option is to use a 
+One option is to use a
 [strategic merge patch](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/patchesstrategicmerge/).
-This uses extra data from the openapi definitions of resources 
+This uses extra data from the openapi definitions of resources
 to know that certain elements should be matched using certain keys.
 In this case, both the `containers` list and `env` list match using `name`.
 
@@ -73,7 +73,7 @@ with regexes.
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- original.yaml
+  - original.yaml
 patches:
   - patch: |
       apiVersion: apps/v1
@@ -94,13 +94,13 @@ patches:
 
 #### _replacements_
 
-The other option makes use of 
+The other option makes use of
 [replacements](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/replacements/).
 This gives you more explicit control over how array items are targeted,
 but I havent thought of a good way to feed structured data in to it.
 
 This example creates a temporary config map to hold that data that we later reference.
-The `config.kubernetes.io/local-config: "true"` annotation 
+The `config.kubernetes.io/local-config: "true"` annotation
 tells `kustomize` not to include it in the final output.
 Then we define a replacement, sourcing data from the configmap we just created,
 and targeting resources with the `[key=value]` item key selector.
@@ -109,7 +109,7 @@ and targeting resources with the `[key=value]` item key selector.
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- original.yaml
+  - original.yaml
 configMapGenerator:
   - name: data-source
     options:

@@ -6,30 +6,30 @@
 
 In the brave new world of building and deploying every commit
 (Continuous Integration / Continuous Deployment, CI/CD),
-for every commit in your git repo, 
-you need to build it, 
+for every commit in your git repo,
+you need to build it,
 outputting a binary artifact, an executable or an entire container image.
 Now comes the problem: how do you organize and keep track of it?
 
 Here's a list of ways to tag things:
 
-- a forever up to date tag: `latest`: 
-  mutable tag, definition depends on time, 
+- a forever up to date tag: `latest`:
+  mutable tag, definition depends on time,
   race conditions for parallel builds
-- a semantic version: `v1.2.3`: 
-  not necessarily immutable, 
-  may change depending on time, 
+- a semantic version: `v1.2.3`:
+  not necessarily immutable,
+  may change depending on time,
   tedious for every commit,
   litters git history
-- full git sha `git rev-parse HEAD`: `879cd74c89efdedd0693b4a7b8416321712c3a07`: 
-  too long, doesn't sort well, 
-  requires the source repo to get any other info, 
+- full git sha `git rev-parse HEAD`: `879cd74c89efdedd0693b4a7b8416321712c3a07`:
+  too long, doesn't sort well,
+  requires the source repo to get any other info,
   eg age estimate
-- short git sha `git rev-parse --short HEAD`: `879cd74`: 
+- short git sha `git rev-parse --short HEAD`: `879cd74`:
   shorter version of the above
 - go [pseudoversions](https://go.dev/ref/mod#pseudo-versions):
   `v0.0.0-0.yyyymmddhhmmss-abcdefabcdef`:
-  sorts like semver, 
+  sorts like semver,
   can incorporate tags, encodes both a time estimate (commit time) and git commit,
   only works for fully reproducible builds
 - pseudoversions with build identifier:

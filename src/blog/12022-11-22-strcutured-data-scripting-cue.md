@@ -111,7 +111,7 @@ run_instances: [
 ]
 
 // how to specify subcommand execution in cue
-// loop over every instance, 
+// loop over every instance,
 // unifying with an exec.Run structure
 command: yolo: task: {for _idx, _instance in run_instances {"\(_instance)": exec.Run & {
   // local reference to the data

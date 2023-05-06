@@ -4,7 +4,7 @@
 
 ### _Telemetry_ Schemas
 
-In its current form, 
+In its current form,
 OpenTelemetry's [Schemas](https://opentelemetry.io/docs/reference/specification/schemas/overview/)
 are just a mapping of old names to new ones.
 The primary motivation appears to be to allow

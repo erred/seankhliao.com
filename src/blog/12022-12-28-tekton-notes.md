@@ -9,7 +9,7 @@ Or maybe not a CI system, a generalized graph of arbitrary code execution.
 
 #### _cloud_ build
 
-There was a build task I wanted to move over from [Google Cloud Build]: 
+There was a build task I wanted to move over from [Google Cloud Build]:
 a nightly build of [Go] (plus some extra tools).
 This was setup as a Dockerfile in a git repo subdirectory,
 a Cloud Build config file,
@@ -79,7 +79,7 @@ timeout: "1800s" # 30m gotip build is slow
 
 Moving over to Tekton, I went with inlining the entire build config into a [TriggerTemplate].
 No more cloning a repo first just for a file.
-I think I could have done this with Cloud Build too, 
+I think I could have done this with Cloud Build too,
 but I haven't been consistent in managing my config as code consistently...
 
 ```yaml
@@ -183,12 +183,12 @@ spec:
       template:
         spec:
           containers:
-          - name: trigger
-            image: curlimages/curl:latest
-            args:
-              - --data
-              - '{}'
-              - http://el-gotip-event.default.svc.cluster.local:8080
+            - name: trigger
+              image: curlimages/curl:latest
+              args:
+                - --data
+                - "{}"
+                - http://el-gotip-event.default.svc.cluster.local:8080
           restartPolicy: OnFailure
 ```
 

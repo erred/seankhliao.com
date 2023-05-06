@@ -7,14 +7,14 @@
 Say you're doing CI/CD like the cool kids:
 push to git, some CI pipeline runs and builds your image,
 some automated push to git happens updating a reference to your deployment,
-and [ArgoCD](https://argo-cd.readthedocs.io/en/stable/) 
+and [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
 goes and syncs your application to the new state.
 
 That all sounds fine, and pretty scalable for many deployment environments.
 But the reality is it's quite a slow development loop when you're working with a single environment.
 So what can you do?
 
-Oh and your kubernetes manifests are rendered (but no deployed) with 
+Oh and your kubernetes manifests are rendered (but no deployed) with
 [Helm](https://helm.sh/),
 and it's in a top level subdirectory in your repo (`repo-root/helm/Chart.yaml`).
 
@@ -38,7 +38,7 @@ our only option for the deploy phase is `kubectl`.
 We don't want to leave around helm deployment records that will interfere with ArgoCD operations.
 
 As for the render phase, it's not as easy as just choose `helm`...
-ArgoCD adds an extra label to deployed manifests 
+ArgoCD adds an extra label to deployed manifests
 to allow it to track which resources are associated with which ArgoCD Application.
 We need to keep those so ArgoCD will still be able to cleanup/sync after we're done with local dev.
 The obvious solution for this is to use [kustomize](https://kustomize.io/)

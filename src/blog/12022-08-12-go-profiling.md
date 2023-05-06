@@ -44,13 +44,13 @@ All aided by the kernel which provides some of the info when it sends SIGPROF.
 
 ##### _memory_
 
-`heap` is a view of where the live things are, 
+`heap` is a view of where the live things are,
 `allocs`is where memory is being allocated (and also a likely candidate for churn / pressure on the GC).
 Memory related information is only collected during / after a GC cycle.
 
 ##### _sync_
 
-`block` points to the waiting things, 
+`block` points to the waiting things,
 while `mutex` points to the things holding the locks (causing others to wait).
 
 ##### _concurrency_
