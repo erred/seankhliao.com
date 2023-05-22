@@ -11,8 +11,8 @@ Using it:
 module example.com/app
 
 require (
-    go.opentelemetry.io/otel v1.16.0-rc.1
-    go.opentelemetry.io/otel/metric v1.16.0-rc.1
+    go.opentelemetry.io/otel v1.16.0
+    go.opentelemetry.io/otel/metric v1.16.0
 )
 ```
 
