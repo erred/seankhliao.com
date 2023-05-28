@@ -98,7 +98,7 @@ receivers:
 Poke around enough on the internet and you might find references to
 [Reduce the set of metrics exposed by the kubelet] and related proposals.
 
-The current state is probably best descrrbed by [KEP-2371 cAdvisor-less, CRI-full Container and Pod Stats].
+The current state is probably best described by [KEP-2371 cAdvisor-less, CRI-full Container and Pod Stats].
 In short,
 container runtimes still need direct integration with cAdvisor to expose metrics,
 but cAdvisor doesn't run everywhere (ex. Windows, virtual machines),
