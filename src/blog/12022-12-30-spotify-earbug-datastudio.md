@@ -34,7 +34,7 @@ With listening (starting) times quite reflective of my schedule.
 
 ![artist](/static/earbug-2022-artist.png)
 
-My favorite artists were no big suprise, though different from the ones that I say out loud.
+My favorite artists were no big surprise, though different from the ones that I say out loud.
 
 ![tracks](/static/earbug-2022-track.png)
 

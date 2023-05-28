@@ -38,7 +38,7 @@ but that mindset might not have permeated in to the lower ranks yet.
 
 On open source:
 The [Go] project continues to be my main focus,
-with the recent [grant] they've given me being a very welcome suprise,
+with the recent [grant] they've given me being a very welcome surprise,
 and quite reassuring on how I was performing given the loose overall coordination.
 CNCF [OpenTelemetry] is another project I'm eyeing,
 though it remains to be seen how I'll adjust my participation level.
@@ -57,7 +57,7 @@ Rounding off the year was a flight over to Lithuania to visit family,
 and more or less lay down on the sofa for 2 weeks.
 
 That Greece trip additionally incurred the cost of a lost passport,
-much to my annoyance, moreso at having to replace some other documents in my wallet,
+much to my annoyance, more at having to replace some other documents in my wallet,
 but also triggering a trip in the coming year back to Taiwan.
 I'm quite gratefult that my company allows me to continue to work there for a short,
 1 month trip.

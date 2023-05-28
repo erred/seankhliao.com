@@ -71,7 +71,7 @@ resource "aws_iam_role" "r" {
 ```
 
 This [blog post](https://jpassing.com/2021/10/05/authenticating-to-aws-by-using-a-google-cloud-service-account-and-assumerolewithwebidentity/)
-was a good reference point on the smae topic.
+was a good reference point on the same topic.
 
 #### _GCP_ cloud setup
 

@@ -11,7 +11,7 @@ so how do you sign all the stuff
 [grafeas](https://grafeas.io/)
 is an API server for storing artifact metadata in your own DB.
 Eg, store in-toto layout / link files in grafeas and pull from there when you need it,
-or store CVEs and occurences of CVEs in there to query later.
+or store CVEs and occurrences of CVEs in there to query later.
 
 #### _in-toto_
 

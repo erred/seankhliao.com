@@ -38,7 +38,7 @@ The MVP becomes a hollow word and arbitrary cutoff for features you put in.
 
 Am I too jaded?
 Perhaps.
-Or maybe I'm suffering from the continuous lack of product managers whereever I go...
+Or maybe I'm suffering from the continuous lack of product managers wherever I go...
 
 [minimum viable product]: https://en.wikipedia.org/wiki/Minimum_viable_product
 [product-market fit]: https://en.wikipedia.org/wiki/Product/market_fit

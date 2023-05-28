@@ -6,7 +6,7 @@
 
 GitOps and declarative management tools are all fine and good,
 until something messes up really bad,
-and you're needing to run some imperitive command across your fleet of machines/clusters/etc.
+and you're needing to run some imperative command across your fleet of machines/clusters/etc.
 
 #### _shell_ script it
 
@@ -127,7 +127,7 @@ command: yolo: task: {for _idx, _instance in run_instances {"\(_instance)": exec
 	cmd: ["zsh", "-c", _script]
 	// sequential runs by forxing a dependency on the previous entry
 	if _idx > 0 {
-		_req: task[run_instances[_idx-1]].sucess
+		_req: task[run_instances[_idx-1]].success
 	}
 }}}
 

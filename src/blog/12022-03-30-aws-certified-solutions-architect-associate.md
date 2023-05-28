@@ -38,6 +38,6 @@ The exam itself was mostly uneventful,
 taking approximately 10 minutes for the precheck,
 and 50 minutes for the exam itself
 (my practice exams usually took 40 mins).
-The exam questions were suprisingly vague at times,
+The exam questions were surprisingly vague at times,
 not giving enough information to answer questions fully,
 though the correct answer is probably not to overthink it.

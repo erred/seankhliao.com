@@ -32,7 +32,7 @@ There are 2 main ways to order dependencies:
 
 `OnSuccess=`, `OnFailure=`: This way you start with a root unit,
 and say which ones to trigger afterwards in a feed forward manner.
-It's an imperitive chain that limits the possibility of reuse.
+It's an imperative chain that limits the possibility of reuse.
 
 `After=` + `Requires`: Using these 2 you specify the end target,
 and the dependencies it has on previous units.
@@ -47,7 +47,7 @@ but they really only have an effect when everything is installed+enabled.
 `.target` files are useful when since with the graph method you need to know the end state,
 and it's unlikely your last step is very memorable.
 It's also a good place to attach the notification handlers with `OnSuccess=` and `OnFailure`.
-Unfortunately, they only run once (unless explicitly targetted by a `systemctl start` command,
+Unfortunately, they only run once (unless explicitly targeted by a `systemctl start` command,
 so you may want to consider replacing them with a dummy service that just echos something).
 
 ##### _passing_ values
@@ -61,7 +61,7 @@ write key=value environment values to be passed in via `EnvironmentFile`
 
 While you may think that you can reuse config with `unit@.service`
 and template common executions,
-it may be less useful than it appears, as you have no good way of specifiying the dependencies before it.
+it may be less useful than it appears, as you have no good way of specifying the dependencies before it.
 
 ##### _isolation_
 

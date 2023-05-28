@@ -4,7 +4,7 @@
 
 ### _robustness_ principle
 
-[RFC 761 Section 2.10] Transmission Control Protocol: Philisophy: Robustness Principle:
+[RFC 761 Section 2.10] Transmission Control Protocol: Philosophy: Robustness Principle:
 
 > be conservative in what you do, be liberal in what you accept from others
 

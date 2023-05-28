@@ -27,7 +27,7 @@ I decided to only keep apexes, ending up with 1109 links.
 In [stage2](https://github.com/erred/hn-sites-2022-04/tree/main/cmd/stage2),
 I went with just requesting the page at the root,
 recording both timings and responses.
-Unsuprisingly, people who posted http links had trouble keeping https running properly.
+Unsurprisingly, people who posted http links had trouble keeping https running properly.
 There were also quite a fre 404/503 responses, error logs below:
 
 ```

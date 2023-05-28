@@ -68,7 +68,7 @@ and preemptively processes them.
 
 The worker code in pkgsite only knows how to fetch modules through the proxy protocol.
 Thus to process private modules,
-it's necessary to run a module proxy wich will own the credentials to your vcs.
+it's necessary to run a module proxy which will own the credentials to your vcs.
 
 [athens] is one such choice.
 While mildly complex, a nice feature is the support of `/index` to list discovered module versions,

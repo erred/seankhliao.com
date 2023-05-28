@@ -35,7 +35,7 @@ but good enough.
 Supports a [`wasm-wasi`](https://doc.rust-lang.org/nightly/rustc/platform-support.html#tier-2)
 target at Tier 2, most tutorials will have you writing rust.
 
-#### _Packaging_ and Distrobution
+#### _Packaging_ and Distribution
 
 You have code, and you have a compiled binary that can run everywhere (that a runtime supports),
 so how do you get that from your development machine to your deployment machine?

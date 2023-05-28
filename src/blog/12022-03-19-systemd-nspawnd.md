@@ -17,7 +17,7 @@ but all it really does is launch the machines using the `systemd-nspawn@.service
 This service just calls `systemd-nspawn` and allows settings files to override it.
 
 `systemd-nspawn` determines the `.nspawn` file to use based on the machine name:`-M`, `--machine`.
-This is a problem if you want to use ephemeral contianers: `-x`, `--ephemeral`,
+This is a problem if you want to use ephemeral containers: `-x`, `--ephemeral`,
 since presumably you're launching a lot of them with different names,
 and now you need a `.nspawn` file per launch (that you need to clean up too...).
 Even though it claims settings will derive the name from the directory base name,

@@ -76,7 +76,7 @@ There's still a retrospective form to fill out.
 Some of it is about ongoing work triggered by the incident,
 others are on preventing a repeat of future similar incidents,
 but there's a careful balancing act here to not layer on more process each time,
-untill you drown in red tape but still don't actually prevent incidents from happening.
+until you drown in red tape but still don't actually prevent incidents from happening.
 
 #### _owning_ the process
 

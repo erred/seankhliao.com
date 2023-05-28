@@ -65,8 +65,8 @@ with conventions on where to place things.
 
 ##### _systemd_ portable services
 
-[portable services](https://systemd.io/PORTABLE_SERVICES/) solves distrobution
-by putting everything into a root tree (still with OS like heirarchy)
+[portable services](https://systemd.io/PORTABLE_SERVICES/) solves distribution
+by putting everything into a root tree (still with OS like hierarchy)
 (optionally as a single file raw image),
 and extracting/rewriting the service files to make them available to the host.
 Also allows for composing overlays.

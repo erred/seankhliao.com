@@ -11,7 +11,7 @@ but different company, different tech stack.
 _Problem:_ Whether you have Prometheus/Alertmanager, OpsGenie, Datadog, Pagerduty
 driving your monitoring alerts system,
 most of them come with integrations with your business chat platform of choice,
-be it MS Teams, Slack, or somethign else.
+be it MS Teams, Slack, or something else.
 But these integrations always use the fancy rich text/interactive blocks format,
 which take up a lot of space, and you might only ever see 2 notifications at once per screen.
 Plus, resolved notifications are sent as a separate message,
@@ -49,7 +49,7 @@ while channels had to message the bot with subscription filters.
 
 This time, Datadog + Slack on AWS.
 DynamoDB was the backing store of choice,
-I was annoyed to disover you can't update a nested key if the previous level didn't exist.
+I was annoyed to discover you can't update a nested key if the previous level didn't exist.
 This time, it had the alert specify the channels it wanted to notify directly,
 I think as a consequence of not having access to all alerts,
 and to simplify the filtering logic.

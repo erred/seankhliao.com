@@ -99,7 +99,7 @@ instead using skaffold hooks to run `helm template`.
 
 While kustomize has a [helmCharts](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/helmcharts/)
 builtin for rendering helm Charts, it's not quite flexible enough,
-requiring a parent directoy holding charts, and only allowing a single values file.
+requiring a parent directory holding charts, and only allowing a single values file.
 
 ```yaml
 # skaffold.yaml

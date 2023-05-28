@@ -21,7 +21,7 @@ Prometheus Operator will read and combine them into a full prometheus config,
 and run prometheus with the config for you.
 
 The problem with using prometheus is... it doesn't retain type data in its storage TSDB,
-so when you try to get the data out of it, you're left guessing if a series is a counter or a guage.
+so when you try to get the data out of it, you're left guessing if a series is a counter or a gauge.
 
 The only obvious choice was the OpenTelemetry Collector's nascent support for ServiceMonitors.
 It uses a different architecture, using a separate service to perform service discovery,
