@@ -51,6 +51,7 @@ $ hostnamectl hostname luna
 # add/enable some third party repos
 $ sudo dnf config-manager --set-enabled google-chrome
 $ sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+$ sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
 $ sudo dnf config-manager --add-repo "$(rpm --eval "https://yum.releases.teleport.dev/rhel/9/Teleport/%{_arch}/stable/v13/teleport.repo")"
 $ sudo dnf install \
   google-chrome-stable \
@@ -149,7 +150,8 @@ $ sudo dnf install \
   pre-commit \
   ripgrep \
   shellcheck \
-  teleport-ent
+  teleport-ent \
+  terraform
 ```
 
 Others can be built from source with Go
