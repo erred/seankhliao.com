@@ -19,7 +19,8 @@ creating finer grained tunnels and access controls than what VPNs offer.
 | [Google IAP][google]                    | cloud hosted | TCP                                       | local proxy, tunnels TCP over HTTPS                                              |
 | [Cloudflare Access][cloudflare]         | cloud hosted | TCP                                       | local proxy, tunnels TCP                                                         |
 | [Hashicorp Boundary][boundary]          | self hosted  | TCP                                       | local proxy, tunnels TCP                                                         |
-| [AWS Worklink][aws]                     | cloud hosted | HTTPS                                     | remote desktop/browser?                                                          |
+| [AWS WorkSpaces][aws]                   | cloud hosted | HTTPS                                     | remote desktop/browser/virtual desktop (VDI)?                                    |
+| [AWS Verified Access][aws_va]           | cloud hosted | HTTPS                                     | reverse proxy for HTTPS                                                          |
 | [Oauth2-proxy][oauth2proxy]             | self hosted  | HTTPS                                     | reverse proxy for HTTPS                                                          |
 | [yahoo/athenz][athenz]                  | self hosted  | HTTPS                                     | reverse proxy for HTTPS                                                          |
 | [Pomerium][pomerium]                    | self hosted  | HTTPS                                     | reverse proxy for HTTPS / ext auth endpoint                                      |
@@ -37,6 +38,7 @@ creating finer grained tunnels and access controls than what VPNs offer.
 | [Smallstep][smallstep] | cloud hosted | SSH       | SSO for SSH (issues SSH certs on demand) |
 
 [aws]: https://aws.amazon.com/worklink/
+[aws_va]: https://aws.amazon.com/verified-access/
 [azure]: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy
 [boundary]: https://www.boundaryproject.io/
 [cloudflare]: https://www.cloudflare.com/teams/access/
