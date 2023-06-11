@@ -75,6 +75,8 @@ Docker:
 
 #### _tools_
 
+##### _build_
+
 - `apko publish`: creates `application/vnd.oci.image.index.v1+json`
 - `buildctl build`: creates `application/vnd.docker.distribution.manifest.v2+json`
 - `buildctl build --opt platform=`: creates `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -86,3 +88,8 @@ Docker:
 - `ko build`: creates `application/vnd.oci.image.manifest.v1+json`
 - `ko build --platform`: creates `application/vnd.oci.image.index.v1+json`
   only when multiple platforms set
+
+##### _merge_
+
+- [`crane index append`](https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane_index_append.md)
+- [`manifest-tool push`](https://github.com/estesp/manifest-tool)
