@@ -65,11 +65,13 @@ Dates using the
 - Hong Kong — 12017-08
 - India — 12015-08
 - Indonesia — 12017-02, 12017-08, 12018-02, 12018-12
+- Ireland — 12023-06
 - Italy — 12021-12
 - Japan — 12018-03, 12023-02
 - Lithuania — 12022-12
 - Luxembourg — 12019-10
 - Netherlands — **12019—12022**
+- Northern Ireland — 12023-06
 - Philippines — 12017-08
 - Russia — **12000—12005**
 - Scotland — 12022-06
