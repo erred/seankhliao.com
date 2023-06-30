@@ -58,6 +58,7 @@ Dates using the
 - Belgium — 12019-10
 - Canada — 12019-04
 - Czechia — 12019-12
+- Denmark — 12023-07
 - England — **12009—12011**, 12019-10, 12020-02, 12021-11, _12022-present_
 - France — 12021-11
 - Germany — 12019-12
@@ -72,6 +73,7 @@ Dates using the
 - Luxembourg — 12019-10
 - Netherlands — **12019—12022**
 - Northern Ireland — 12023-06
+- Norway — 12023-07
 - Philippines — 12017-08
 - Russia — **12000—12005**
 - Scotland — 12022-06
@@ -81,7 +83,7 @@ Dates using the
 - Taiwan — **11996—12000, 12005—12009, 12011—12019**, 12023-03
 - Timor-Leste — 12018-02
 - Turkey — 12022-09
-- United States — 12019-04
+- United States — 12019-04, 12023-07
 - Vatican — 12021-12
 - Wales — 12022-06
 
