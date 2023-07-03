@@ -89,7 +89,7 @@ func main() {
                         return res.SignedBlob, nil
                 },
                 Method: "GET",
-                Expires: time.Now().Add(5*time.Minute)
+                Expires: time.Now().Add(5*time.Minute),
         })
 
         fmt.Println(u)
