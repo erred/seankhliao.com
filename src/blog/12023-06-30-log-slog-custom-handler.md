@@ -51,12 +51,14 @@ import (
     "log/slog"
     "os"
     "slices"
+    "sync"
 )
 
 func main() {
     h := &handler{
-        w:     os.Stdout,
         state: &state{},
+        mu:    new(sync.Mutex),
+        w:     os.Stdout,
     }
     l := slog.New(h)
     l.InfoCtx(context.Background(), "hello world", slog.Group("a"), slog.Group("b"))
@@ -84,6 +86,7 @@ const (
 type handler struct {
     minLevel slog.Level
     state    *state
+    mu       *sync.Mutex
     w        io.Writer
 }
 
@@ -91,6 +94,7 @@ func (h *handler) clone() *handler {
     return &handler{
         minLevel: h.minLevel,
         state:    h.state.clone(),
+        mu:       h.mu,
         w:        h.w,
     }
 }
@@ -160,6 +164,8 @@ func (h *handler) Handle(ctx context.Context, r slog.Record) error {
     }
     buf.WriteString("}\n")
 
+    h.mu.Lock()
+    defer h.mu.Unlock()
     _, err := h.w.Write(buf.Bytes())
     return err
 }
