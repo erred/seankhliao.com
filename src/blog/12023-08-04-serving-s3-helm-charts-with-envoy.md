@@ -74,7 +74,12 @@ and upgraded chartmuseum in there.
 
 #### _envoy_
 
-So, that envoy config:
+So, that envoy config.
+Using envoy versions 1.26 - 1.28
+with the key being the
+[AwsRequestSigning](https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/aws_request_signing_filter)
+and [CacheFilter](https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/cache_filter).
+`RFCF` (Response From Cache Filter) in the access log response flags indicated a cache hit.
 
 ```yaml
 admin:
