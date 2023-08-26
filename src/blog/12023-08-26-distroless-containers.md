@@ -29,3 +29,13 @@ The `cgr.dev/chainguard/static` images are based on alpine,
 and seem to contain even more metadata files,
 plus a bunch of alpine apk keys for some reason.
 It's 1 layer with a 2.0 MB size.
+
+Though for Go binaries,
+now you can `import _ "time/tzdata"` and `import _ "golang.org/x/crypto/x509roots/fallback"`
+to bundle both timezone info and ca ca certificates in the binary.
+This leaves a default non-root user as the main feature,
+along with some directories and metadata (`/etc/protocols` anyone?)
+as the differences,
+which doesn't seem like a great loss,
+considering the container executor can just override the user id,
+and mount temp dirs when necessary (readonly root?).
