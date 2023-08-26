@@ -23,7 +23,9 @@ Since they share(d?) some maintainers, there's some common stuff between the 2 i
 The `gcr.io/distroless/static` images are based on Debian,
 but mostly stripped clean,
 with some metadata and protocol files still around.
+It's 8 layers with a 2.4 MB size.
 
 The `cgr.dev/chainguard/static` images are based on alpine,
 and seem to contain even more metadata files,
 plus a bunch of alpine apk keys for some reason.
+It's 1 layer with a 2.0 MB size.
