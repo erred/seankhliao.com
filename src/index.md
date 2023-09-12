@@ -60,7 +60,7 @@ Dates using the
 - Czechia — 12019-12
 - Denmark — 12023-07
 - England — **12009—12011**, 12019-10, 12020-02, 12021-11, _12022-present_
-- France — 12021-11
+- France — 12021-11, 12023-08
 - Germany — 12019-12
 - Greece — 12022-10
 - Hong Kong — 12017-08
@@ -79,6 +79,7 @@ Dates using the
 - Scotland — 12022-06
 - Singapore — 12017-01
 - South Korea — 12018-06
+- Spain — 12023-09
 - Sweden — 12018-01
 - Taiwan — **11996—12000, 12005—12009, 12011—12019**, 12023-03
 - Timor-Leste — 12018-02
