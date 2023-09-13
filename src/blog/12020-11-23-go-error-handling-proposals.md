@@ -2,7 +2,7 @@
 
 ## overview of error handling proposals in go
 
-_note:_ updated 12023-04-17
+_note:_ updated 12023-09-13
 
 ### _error_ handling
 
@@ -36,6 +36,7 @@ _note:_ almost all the ones that claim to use "plain functions" as error handler
 ###### _predeclared_ handlers
 
 - [`handle err { return _, wrap(err) }`<br>`x := check foo()`](https://go.googlesource.com/proposal/+/master/design/go2draft-error-handling.md)
+- [`catch (err error) { return _, wrap(err) }`<br>`x := catch foo()`]
 - [`handle err { return _, wrap(err) }`<br>`x, # := foo()`](https://gist.github.com/oktalz/f04f36a3c2f61af22c7a6e06095d18eb):
 - [`handle func(err error) (T, error) { return _, wrap(err) }`<br>`x, ? := foo()`](https://github.com/rockmenjack/go-2-proposals/blob/master/error_handling.md)
 - [`watch err { if err != nil { return _, wrap(err) } }`<br>`x, err != foo()`](https://go.dev/issue/40821)
@@ -75,16 +76,21 @@ some rely on `wrap` being smart and passing through `nil` (so not `fmt.Errorf`),
 - [`x, err := foo()`<br>`if err != nil { return _, wrap(err) }`](https://go.dev/issue/33113), [also](https://go.dev/issue/27135): if ... on 1 line
 - [`x, err := foo()`<br>`if err != nil { return wrap(err) }`](https://go.dev/issue/56628): implicit zero values for other returns
 - [`x, err := foo()`<br>`if !err { return _, wrap(err) }`](https://gist.github.com/fedir/50158bc351b43378b829948290102470)
-- [`x, err := foo()`<br>`if err { return _, wrap(err) }`](https://go.dev/issue/26712)
+- [`x, err := foo()`<br>`if err { return _, wrap(err) }`](https://go.dev/issue/26712), [also](https://go.dev/issue/60251)
 - [`x, err := foo()`<br>`if err? { return _, wrap(err) }`](https://go.dev/issue/32845)
 - [`x, err := foo()`<br>`if err != nil: return _, wrap(err)`](https://go.dev/issue/57547)
 - [`x, err := foo()`<br>`return wrap(err) if err != nil`](https://go.dev/issue/27794), [also](https://go.dev/issue/32860)
 - [`x, err := foo()`<br>`return if err != nil { _, wrap(err) }`](https://go.dev/issue/52977), [also](https://go.dev/issue/53017)
 - [`x, err := foo()`<br>`return(err) wrap(err)`](https://go.dev/issue/28229)
 - [`x, err := foo()`<br>`\ nil, wrap(err)`](https://go.dev/issue/57236)
-- [`x, err := foo(); if err != nil { return _, wrap(err) }`](https://gist.github.com/jozef-slezak/93a7d9d3d18d3fce3f8c3990c031f8d0), [also](https://go.dev/issue/27450): everything on 1 line
+- [`x, err := foo(); if err != nil { return _, wrap(err) }`](https://go.dev/issue/57645),
+  [also](https://gist.github.com/jozef-slezak/93a7d9d3d18d3fce3f8c3990c031f8d0),
+  [also](https://go.dev/issue/27450),
+  [also](https://go.dev/issue/33113),
+  [also](https://go.dev/issue/60771): everything on 1 line
 - [`x, err := foo() ?? { return _, wrap(err) }`](https://go.dev/issue/37243)
 - [`x, err := foo() else { return _, wrap(err) }`](https://go.dev/issue/56895)
+  [`x, err := foo() orelse { return _, wrap(err) }`](https://go.dev/issue/61750)
 - [`x, err := foo() /* err */ { return _, wrap(err) }`](https://github.com/gooid/gonotes/blob/master/inline_style_error_handle.md),
 - [`x, err := foo() { return _, wrap(err) }`](https://go.dev/issue/41908), [also](https://go.dev/issue/54686)
 - [`x, err := foo(); err.return wrap(err)`](https://go.dev/issue/39372)
@@ -112,23 +118,24 @@ some rely on `wrap` being smart and passing through `nil` (so not `fmt.Errorf`),
 
 ##### _return_
 
-- [`x :=. foo()`](https://go.dev/issue/59664)
 - [`x := try(foo())`](https://go.googlesource.com/proposal/+/master/design/32437-try-builtin.md)
 - [`x := must(foo())`](https://go.dev/issue/32219): panic instead of return
 - [`x := handle foo()`](https://go.dev/issue/54677)
 - [`x := guard foo()`](https://go.dev/issue/31442)
 - [`x := must foo()`](https://gist.github.com/VictoriaRaymond/d70663a6ec6cdc59816b8806dccf7826)
 - [`x := foo!()`](https://go.dev/issue/21155)
-- [`x := foo()?`](https://gist.github.com/yaxinlx/1e013fec0e3c2469f97074dbf5d2e2c0), [also](https://go.dev/issue/39451), [also](https://go.dev/issue/51146)
+- [`x := foo()?`](https://go.dev/issue/39451), [also](https://go.dev/issue/51146), [also](<(https://gist.github.com/yaxinlx/1e013fec0e3c2469f97074dbf5d2e2c0)>)
 - [`x := #foo()`](https://go.dev/issue/18721)
+- [`x :=. foo()`](https://go.dev/issue/59664)
 - [`x, # := foo()`](https://go.dev/issue/22122): panic instead of return
 - [`x, ~ := foo()`](https://go.dev/issue/50207): wrap with stacktraces
 - [`x, - := foo()`](https://go.dev/issue/52415)
 - [`x, ? := foo()`](https://go.dev/issue/42214), [also](https://go.dev/issue/32601), [also](https://go.dev/issue/56355)
 - [`x, ! := foo()`](https://gist.github.com/lldld/bf93ca94c24f172e95baf8c123427ace), [also](https://go.dev/issue/33150), [panic](https://go.dev/issue/35644)
 - [`x, !! := foo()`](https://go.dev/issue/32884)
-- [`x, !err := foo()`](https://go.dev/issue/14066)
+- [`x, !err := foo()`](https://go.dev/issue/14066), [also](https://go.dev/issue/62253)
 - [`x, ^err := foo()`](https://go.dev/issue/42318)
+- [`x, ?err := foo()`](https://go.dev/issue/60779)
 - [`x, err? := foo()`](https://go.dev/issue/36390)
 - [`x, err := foo() throws err`](https://go.dev/issue/32852)
 - [`x, check err := foo()`](https://go.dev/issue/46655)
@@ -137,6 +144,7 @@ some rely on `wrap` being smart and passing through `nil` (so not `fmt.Errorf`),
 - [`x, err := foo()`<br>`catch(err)`](https://go.dev/issue/32811): builtin `if err != nil { return ..., err }` macro
 - [`x := foo().handleErr()`](https://go.dev/issue/56126): builtin `if err != nil { return ..., err }` macro
 - [`x := foo() -> throw err`](https://go.dev/issue/51415)
+- [`x := if foo(); return`](https://go.dev/issue/62378)
 
 ##### _try..catch_
 
