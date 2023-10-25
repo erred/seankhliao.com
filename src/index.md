@@ -81,6 +81,7 @@ Dates using the
 - South Korea — 12018-06
 - Spain — 12023-09
 - Sweden — 12018-01
+- Switzerland — 12023-10
 - Taiwan — **11996—12000, 12005—12009, 12011—12019**, 12023-03
 - Timor-Leste — 12018-02
 - Turkey — 12022-09
