@@ -46,8 +46,7 @@ easy enough to clean up.
 >
 > [26] KNV1034: The "config-management-system" Namespace must not be declared metadata.name: config-management-system group: version: v1 kind: Namespace For more information, see https://g.co/cloud/acm-errors#knv1034
 >
-> [27] KNV1043: Anthos Configuration Management does not allow configuring CRDs in the `configmanagement.gke.io` APIGroup. To fix, please use a different APIGroup. metadata.name: clusterselectors.configmanagement.gke.io group: apiextensions.k8s.io version: v1 kind: CustomResourceDefinition For more information, see https://g.co/cloud/acm-errors#knv1043
-> [31] KNV1069: RootSync config-management-system/config-sync-root must not manage itself in its repo namespace: config-management-system metadata.name: config-sync-root group: configsync.gke.io version: v1beta1 kind: RootSync For more information, see https://g.co/cloud/acm-errors#knv1069
+> [27] KNV1043: Anthos Configuration Management does not allow configuring CRDs in the `configmanagement.gke.io` APIGroup. To fix, please use a different APIGroup. metadata.name: clusterselectors.configmanagement.gke.io group: apiextensions.k8s.io version: v1 kind: CustomResourceDefinition For more information, see https://g.co/cloud/acm-errors#knv1043 > [31] KNV1069: RootSync config-management-system/config-sync-root must not manage itself in its repo namespace: config-management-system metadata.name: config-sync-root group: configsync.gke.io version: v1beta1 kind: RootSync For more information, see https://g.co/cloud/acm-errors#knv1069
 
 So a lot of errors about how Config Sync really shouldn't manage itself.
 Oh well, it's just a few bootstrap configs to apply by hand then...
