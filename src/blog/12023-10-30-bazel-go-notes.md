@@ -212,5 +212,6 @@ $ bazel run //helloworld2
 
 Note that it appears we can't run `buildozer` via `bazel` itself because we can't escape the sandbox,
 and I don't understand enough of `bazel` to make it work.
+(apparently it's not too hard: [aspect blog](https://www.aspect.dev/blog/bazel-can-write-to-the-source-folder))
 
 [registry.bazel.build]: https://registry.bazel.build/
