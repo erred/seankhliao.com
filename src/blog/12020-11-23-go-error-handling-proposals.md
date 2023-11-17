@@ -2,7 +2,7 @@
 
 ## overview of error handling proposals in go
 
-_note:_ updated 12023-09-13
+_note:_ updated 12023-11-17
 
 ### _error_ handling
 
@@ -79,6 +79,7 @@ some rely on `wrap` being smart and passing through `nil` (so not `fmt.Errorf`),
 - [`x, err := foo()`<br>`if err { return _, wrap(err) }`](https://go.dev/issue/26712), [also](https://go.dev/issue/60251)
 - [`x, err := foo()`<br>`if err? { return _, wrap(err) }`](https://go.dev/issue/32845)
 - [`x, err := foo()`<br>`if err != nil: return _, wrap(err)`](https://go.dev/issue/57547)
+- [`x, err := foo()`<br>`if err != nil return _, wrap(err)`](https://go.dev/issue/62434)
 - [`x, err := foo()`<br>`return wrap(err) if err != nil`](https://go.dev/issue/27794), [also](https://go.dev/issue/32860)
 - [`x, err := foo()`<br>`return if err != nil { _, wrap(err) }`](https://go.dev/issue/52977), [also](https://go.dev/issue/53017)
 - [`x, err := foo()`<br>`return(err) wrap(err)`](https://go.dev/issue/28229)
@@ -113,6 +114,7 @@ some rely on `wrap` being smart and passing through `nil` (so not `fmt.Errorf`),
 - [`x := try foo() or return _err`](https://go.dev/issue/52175)
 - [`x := try foo(), wrap`](https://go.dev/issue/55026)
 - [`x := collect(&err, foo(), wrap)`](https://go.dev/issue/32880)
+- [`abort? x, err := foo(); _, wrap(err)`](https://go.dev/issue/63575)
 - [`if x, err := foo(); err != nil then return _, wrap(err)`](https://go.dev/issue/46717)
 - [`try x, err := foo() { return _, wrap(err) }`](https://go.dev/issue/39890)
 
@@ -137,6 +139,7 @@ some rely on `wrap` being smart and passing through `nil` (so not `fmt.Errorf`),
 - [`x, ^err := foo()`](https://go.dev/issue/42318)
 - [`x, ?err := foo()`](https://go.dev/issue/60779)
 - [`x, err? := foo()`](https://go.dev/issue/36390)
+- [`x, err! := foo()`](https://go.dev/issue/63380)
 - [`x, err := foo() throws err`](https://go.dev/issue/32852)
 - [`x, check err := foo()`](https://go.dev/issue/46655)
 - [`x, err := foo()`](https://go.dev/issue/57552): builtin implicit nil check
