@@ -1,6 +1,7 @@
 render: {
 	baseUrl: "https://sean.liao.dev"
 	gtm:     "GTM-TLVN7D6"
+	// dst:     "out"
 }
 
 firebase: {
