@@ -1,6 +1,6 @@
 render: {
 	baseUrl: "https://sean.liao.dev"
-	gtm:     "GTM-TLVN7D6"
+	gtm:     "G-9GLEE4YLNC"
 	// dst:     "out"
 }
 
