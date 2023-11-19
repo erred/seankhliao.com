@@ -21,14 +21,14 @@ Anyway, I want kubelet and I want containerd.
 I'm on [Arch Linux](https://archlinux.org/),
 so getting sou is an easy:
 
-```
-pacman -S containerd kubelet
+```sh
+$ pacman -S containerd kubelet
 ```
 
 There are some necessary settings:
 
-```
-cat << EOF > /etc/modules-load.d/br_netfilter.conf
+```sh
+$ cat << EOF > /etc/modules-load.d/br_netfilter.conf
 br_netfilter
 EOF
 
@@ -45,8 +45,8 @@ EOF
 [containerd](https://containerd.io/)
 is our container runtime of choice, and it needs some configuring:
 
-```
-cat << EOF > /etc/containerd/config.toml
+```sh
+$ cat << EOF > /etc/containerd/config.toml
 
 # importart or else it defaults to v1
 version = 2
@@ -79,8 +79,8 @@ I couldn't get [bridge](https://www.cni.dev/plugins/current/main/bridge/) to wor
 _note:_ kubernetes us [currently](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)
 on v0.4.0 of CNI spec, so some old style config (subnet) is needed
 
-```
-cat << EOF > /etc/cni/cni.template
+```sh
+$ cat << EOF > /etc/cni/cni.template
 {
   "name": "containerd",
   "cniVersion": "0.4.0",
@@ -110,16 +110,16 @@ Currently on kubelet v1.21.3
 
 Arch provides a systemd unit file for kubelet where args are passed via env defined in:
 
-```
-cat << EOF > /etc/kubernetes/kubelet.env
+```sh
+$ cat << EOF > /etc/kubernetes/kubelet.env
 KUBELET_ARGS=--container-runtime=remote --container-runtime-endpoint=unix:///run/containerd/containerd.sock --config /etc/kubernetes/kubelet.yaml
 EOF
 ```
 
 I'm going to not use deprecated flags and use a config file instead:
 
-```
-cat << EOF > /etc/kubernetes/kubelet.yaml
+```sh
+$ cat << EOF > /etc/kubernetes/kubelet.yaml
 apiVersion: kubelet.config.k8s.io/v1beta1
 kind: KubeletConfiguration
 authentication:
@@ -138,8 +138,8 @@ EOF
 
 Now we can put a pod definition in `/etc/kubernertes/manifests/foo.yaml` and watch it run:
 
-```
-cat << EOF > /etc/kubernetes/manifests/httpbin.yaml
+```sh
+$ cat << EOF > /etc/kubernetes/manifests/httpbin.yaml
 apiVersion: v1
 kind: Pod
 metadata:

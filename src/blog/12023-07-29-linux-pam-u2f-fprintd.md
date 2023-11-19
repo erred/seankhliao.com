@@ -33,7 +33,7 @@ Here's the auth chains I ended up with:
 
 ###### login
 
-```
+```txt
 auth       required     pam_securetty.so
 auth       requisite    pam_nologin.so
 auth       include      system-local-login
@@ -41,7 +41,7 @@ auth       include      system-local-login
 
 ###### system-local-login
 
-```
+```txt
 auth      sufficient 		       pam_fprintd.so       max-tries=2 timeout=15
 auth      sufficient 		       pam_u2f.so           cue origin=pam://hwaryun appid=pam://hwaryun authfile=/etc/u2f_keys [cue_prompt=touche]
 auth      include   system-login
@@ -49,7 +49,7 @@ auth      include   system-login
 
 ###### system-login
 
-```
+```txt
 auth       required   pam_shells.so
 auth       requisite  pam_nologin.so
 auth       include    system-auth
@@ -57,7 +57,7 @@ auth       include    system-auth
 
 ###### system-auth
 
-```
+```txt
 auth       sufficient 		       pam_fprintd.so       max-tries=2 timeout=15
 auth       sufficient 		       pam_u2f.so           cue origin=pam://hwaryun appid=pam://hwaryun authfile=/etc/u2f_keys [cue_prompt=touche]
 -auth      [success=2 default=ignore]  pam_systemd_home.so
@@ -70,6 +70,6 @@ auth       required                    pam_faillock.so      authsucc
 
 ###### sudo
 
-```
+```txt
 auth		include		system-auth
 ```

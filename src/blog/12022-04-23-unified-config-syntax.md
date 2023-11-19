@@ -59,7 +59,7 @@ Also, this is very much tied to the tool you're using
 
 Example: helm
 
-```helm
+```go-text-template
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -115,7 +115,7 @@ resource: aws_iam_policy: policy: {
 }
 ```
 
-```
+```cue
 apiVersion: v1
 kind: ConfigMap
 metadata: name: foo

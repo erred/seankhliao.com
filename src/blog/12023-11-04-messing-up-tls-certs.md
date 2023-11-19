@@ -31,7 +31,7 @@ $ acme.sh --server google --ecc --renew --force --dns dns_gcloud --domain '*.lia
 
 This gave me the usual directory of:
 
-```
+```txt
 .acme.sh/
   *.liao.dev/
     *.liao.dev.cer
@@ -166,7 +166,7 @@ since I was pretty sure I was using the right certs.
 Testing the certs locally with a simple Go HTTPS server it logged the following,
 which was even more confusing since `bad record mac` was an internal error.
 
-```
+```txt
 2023/11/05 21:03:31 http: TLS handshake error from 127.0.0.1:38672: local error: tls: bad record MAC
 2023/11/05 21:05:57 http: TLS handshake error from 127.0.0.1:40788: remote error: tls: bad certificate
 ```

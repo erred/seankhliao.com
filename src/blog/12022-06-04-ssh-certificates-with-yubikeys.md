@@ -26,7 +26,7 @@ Solution? SSH Certificates.
 
 I setup everything in `.ssh/config`, allowing me to just do `ssh lilith`
 
-```
+```sshconfig
 Host lilith
     Hostname 192.168.100.1
     IdentityFile ~/.ssh/ssh/5r
@@ -36,7 +36,7 @@ Host lilith
 On the remote host, `.ssh/authorized_keys` will have lines like below,
 where the key is just the CA's public key (found in`.pub` file).
 
-```
+```txt
 cert-authority sk-ssh-ed25519@openssh.com AAAA....=
 ```
 

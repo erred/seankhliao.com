@@ -22,7 +22,7 @@ Let's start from basics
 Prometheus records data in time series.
 An _instant-vector_ gives you a single data point per timestamp, per time series:
 
-```
+```txt
 time (min)  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
 metric_one  1  1  2  2  4  4  8  8  8  8 16 16 32 32 64 64
 ```
@@ -30,7 +30,7 @@ metric_one  1  1  2  2  4  4  8  8  8  8 16 16 32 32 64 64
 A _range-vector_ gives you a slice of data (covering the lookback period up to now),
 for each point in time. For the above with a range of 2:
 
-```
+```txt
 time (min)       0     1       2       3       4       5       6       7      8       9        10        11         12         13         14         15
 metric_one[2m] [1] [1 1] [1 1 2] [1 2 2] [2 2 4] [2 4 4] [4 4 8] [4 8 8] [8 8 8] [8 8 8] [8 8 16] [8 16 16] [16 16 32] [16 32 32] [32 32 64] [32 64 64]
 ```
@@ -43,7 +43,7 @@ eg, for a given range `[8 16 16]`,
 the increase is `8` over `2m` (`120s`),
 giving a rate `8 / 120` = approx. `0.67`.
 
-```
+```txt
 time (min)           0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15
 rate(metric_one[2m]) 0     0 0.008 0.008 0.017 0.017 0.033 0.033     0     0 0.067 0.067 0.133 0.133 0.267 0.267
 ```
@@ -55,7 +55,7 @@ each having a `le` label denoting bucket boundaries,
 recording the count up to now (monotonic over time)
 and up to `le` in size (monotonic over the buckets).
 
-```
+```txt
 time (min)                   0  1  2  3  4  5
 metric_two_bucket{le="10"}   0  1  1  4  4  4
 metric_two_bucket{le="50"}   0  1  2  6  6  8
@@ -79,7 +79,7 @@ interpolating if necessary.
 
 ref: [quantile.go](https://github.com/prometheus/prometheus/blob/26117fc8850f36d6018b01c54d84df16859467e9/promql/quantile.go#L119)
 
-```
+```txt
 metric_two_bucket{le="10"}    40     40
 metric_two_bucket{le="50"}    80  -> 40
 metric_two_bucket{le="100"}   90     10

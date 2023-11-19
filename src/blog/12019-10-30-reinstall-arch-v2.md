@@ -19,11 +19,11 @@ follow the [Installation Guide](https://wiki.archlinux.org/index.php/Installatio
 
 #### partition / mounting
 
-```
-mount /dev/nvme0n1p3 /mnt
-mkdir /mnt/{boot,efi}
-mount /dev/nvme0n1p1 /mnt/efi
-mount --bind /mnt/efi/EFI/arch /mnt/boot
+```sh
+$ mount /dev/nvme0n1p3 /mnt
+$ mkdir /mnt/{boot,efi}
+$ mount /dev/nvme0n1p1 /mnt/efi
+$ mount --bind /mnt/efi/EFI/arch /mnt/boot
 ```
 
 1. edit `/etc/fsab` after generating to fix bind mount
@@ -31,8 +31,8 @@ mount --bind /mnt/efi/EFI/arch /mnt/boot
 
 #### pacstrap
 
-```
-pacstrap /mnt base base-devel linux linux-firmware intel-ucode \
+```sh
+$ pacstrap /mnt base base-devel linux linux-firmware intel-ucode \
   wpa_supplicant go{,-tools} htop man-{db,pages} neovim git python{,2,-neovim} \
   reflector exa ripgrep aria2 sudo docker openssh zsh zsh-completions yubikey-manager \
   sway xf86-video-intel swaylock mako i3status bemenu grim slurp playerctl \
@@ -41,36 +41,36 @@ pacstrap /mnt base base-devel linux linux-firmware intel-ucode \
 
 #### user
 
-```
-groupadd -r sudo
-useradd -m -G vidoe,input,sudo,docker user
-passwd user
-EDITOR=nvim visudo
+```sh
+$ groupadd -r sudo
+$ useradd -m -G vidoe,input,sudo,docker user
+$ passwd user
+$ EDITOR=nvim visudo
 ```
 
 ##### as user
 
-```
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin && makepkg -si
-yay -S wl-clipboard-x11 tag-ag
-cd ~
-git clone https://github.com/seankhliao/pkgbuilds
-cd pkgbuilds/sway-service && makepkg -si
-cd ~
-rm -rf .config
-git clone https://github.com/seankhliao/config .config
-sudo ln -s $(pwd)/.config/zsh/zshenv /etc/zsh/zshenv
-cd ~
-mkdir -p data/{down,xdg/{nvim/{backup,undo},zsh}}
+```sh
+$ git clone https://aur.archlinux.org/yay-bin.git
+$ cd yay-bin && makepkg -si
+$ yay -S wl-clipboard-x11 tag-ag
+$ cd ~
+$ git clone https://github.com/seankhliao/pkgbuilds
+$ cd pkgbuilds/sway-service && makepkg -si
+$ cd ~
+$ rm -rf .config
+$ git clone https://github.com/seankhliao/config .config
+$ sudo ln -s $(pwd)/.config/zsh/zshenv /etc/zsh/zshenv
+$ cd ~
+$ mkdir -p data/{down,xdg/{nvim/{backup,undo},zsh}}
 ```
 
 #### system
 
 after reboot
 
-```
-systemctl enable --now wpa_supplicant@wlp58s0
-systemctl enable --now pcscd
+```sh
+$ systemctl enable --now wpa_supplicant@wlp58s0
+$ systemctl enable --now pcscd
 ### edit /etc/resolv.conf
 ```

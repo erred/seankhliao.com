@@ -73,7 +73,7 @@ So your options are probably:
 
 #### _example_
 
-```
+```systemd
 # clone.service
 [Unit]
 Description=clone git repo

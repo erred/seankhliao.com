@@ -14,7 +14,7 @@ and
 
 ### tldr
 
-```
+```sh
 # encrypt for me
 # use: encrypt file1 file2...
 function encrypt() {
@@ -62,23 +62,23 @@ with _age_
 
 no, `go get` doesn't work
 
-```
-git clone https://github.com/FiloSottile/age
-cd age && go install ./cmd/...
+```sh
+$ git clone https://github.com/FiloSottile/age
+$ cd age && go install ./cmd/...
 ```
 
 ##### Keygen
 
 or use ssh keys
 
-```
-age-keygen -o age.key
+```sh
+$ age-keygen -o age.key
 ```
 
 ##### Encrypt
 
-```
-age -r "public key of recipient" -o output.file.age input.file
+```sh
+$ age -r "public key of recipient" -o output.file.age input.file
 
 "age public key": "age14mg08panez45c6lj2cut2l8nqja0k5vm2vxmv5zvc4ufqgptgy2qcjfmuu"
 "ssh public key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKnAmz4u5/51kPPsebDCiYTXvuftUORh/TJ4pvN3NvQa"
@@ -86,8 +86,8 @@ age -r "public key of recipient" -o output.file.age input.file
 
 ##### Decrypt
 
-```
-age -d -i path/to/private.key -o output.file input.file.age
+```sh
+$ age -d -i path/to/private.key -o output.file input.file.age
 ```
 
 #### Sign
@@ -97,23 +97,22 @@ why keygen? I don't know
 
 ##### Keygen
 
-```
-ssh-keygen -t ed25519
+```sh
+$ ssh-keygen -t ed25519
 ```
 
 ##### Sign
 
-```
-ssh-keygen -Y sign -f path/to/private.key -n file@seankhliao.com input.file
-
+```sh
+$ ssh-keygen -Y sign -f path/to/private.key -n file@seankhliao.com input.file1
 ```
 
 - -n: takes an arbitrary string as namespace, recommended: namespace@domain.tld
 
 ##### Verify
 
-```
-ssh-keygen -Y verify -n file@seankhliao -f accepted.file -I identity -s input.file.sig < input.file
+```sh
+$ ssh-keygen -Y verify -n file@seankhliao -f accepted.file -I identity -s input.file.sig < input.file
 ```
 
 - -n: takes an arbitrary string as namespace, recommended: namespace@domain.tld

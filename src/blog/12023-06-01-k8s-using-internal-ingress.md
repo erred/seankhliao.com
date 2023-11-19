@@ -29,7 +29,7 @@ as HTTPS is going to get a CONNECT request instead to tunnel through to the targ
 
 Plain request:
 
-```
+```http
 GET /foo HTTP/1.1
 Host: example.com
 User-Agent: curl/8.1.2
@@ -38,7 +38,7 @@ Accept: */*
 
 Proxy request
 
-```
+```http
 GET http://example.com/foo HTTP/1.1
 Host: example.com
 User-Agent: curl/8.1.2

@@ -19,7 +19,7 @@ Right now,
 I like docker containers,
 so build on push:
 
-```
+```yaml
 on: push
 jobs:
   job1:
@@ -31,7 +31,6 @@ jobs:
         env:
           TOKEN: ${{ secrets.SOME_SECRET }}
       - run: docker push some_image
-
 ```
 
 ### model

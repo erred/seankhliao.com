@@ -10,7 +10,7 @@ and for some reason, the client never reached the backend
 (both in cluster).
 The error I got was:
 
-```
+```txt
 "error":"rpc error: code = Unknown desc = ",
 ```
 
@@ -29,8 +29,8 @@ which to be honest didn't help much as it just reported a similar error.
 Finally, I remembered that gRPC was just HTTP/2,
 so plain [curl](https://curl.se/) here I come:
 
-```
-curl --resolve authnb.auth.svc:8443:127.0.0.1 -v --http2-prior-knowledge https://authnb.auth.svc:8443
+```sh
+$ curl --resolve authnb.auth.svc:8443:127.0.0.1 -v --http2-prior-knowledge https://authnb.auth.svc:8443
 ```
 
 and wouldn't you know it: `< HTTP/2 301` pointing to https.

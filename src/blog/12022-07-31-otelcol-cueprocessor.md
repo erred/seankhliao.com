@@ -392,7 +392,7 @@ service:
 
 running it with:
 
-```
+```sh
 $ /tmp/otelcol-distribution1976041369/otelcol-custom --config config.yaml
 ```
 

@@ -34,7 +34,7 @@ This unfortunately makes the `-a`, `--as-pid2` much less useful.
 
 #### _login_
 
-```
+```txt
 arch-nspawn login: root
 Login incorrect
 ```

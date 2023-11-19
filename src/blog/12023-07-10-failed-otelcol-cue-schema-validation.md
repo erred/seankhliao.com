@@ -23,20 +23,20 @@ This makes it much less useful for automatic schema extraction,
 even if the types I want (usually the `Config` structs + their fields)
 don't use any of generics or unsafe.
 
-```
-main » cue get go -i go.opentelemetry.io/collector/service
+```sh
+$ cue get go -i go.opentelemetry.io/collector/service
 panic: unsupported type *types.TypeParam [recovered]
 	panic: unsupported type *types.TypeParam
 ---
-main » cue get go go.opentelemetry.io/collector/receiver/otlpreceiver
+$ cue get go go.opentelemetry.io/collector/receiver/otlpreceiver
 invalid identifier "unsafe.Pointer"
 ```
 
 As for validation directly via cue,
 I get the feeling the output isn't quite as nice.
 
-```
-main » cue vet config.yaml config.cue -d '#Config'
+```sh
+$ cue vet config.yaml config.cue -d '#Config'
 _pipelines.logs.exporters.awss3: conflicting values false and true:
     ./config.cue:61:3
     ./config.cue:69:5

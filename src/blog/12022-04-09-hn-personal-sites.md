@@ -30,7 +30,7 @@ recording both timings and responses.
 Unsurprisingly, people who posted http links had trouble keeping https running properly.
 There were also quite a fre 404/503 responses, error logs below:
 
-```
+```txt
 022/04/09 16:28:25 https adi.onl read body https://adi.onl/: gzip: invalid header
 2022/04/09 16:28:25 http adi.onl read body http://adi.onl/: gzip: invalid header
 2022/04/09 16:28:28 https art-res.xyz do request https://art-res.xyz/: Get "https://art-res.xyz/": dial tcp: lookup art-res.xyz on 8.8.8.8:53: no such host

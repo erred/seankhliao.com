@@ -58,7 +58,7 @@ alias v='${EDITOR}'
 I want a better ls with [exa](https://the.exa.website/),
 but I don't want my config to break every time I clone it onto a new machine.
 
-```
+```zsh
 (( $+commands[exa] )) \
     && alias ll='exa -l -a --git --time-style iso --group-directories-first' \
     || alias ll='ls -alh';
@@ -155,14 +155,14 @@ bindkey '^[^[' _sudo_cmdline
 
 my prompt looks like
 
-```
+```txt
 13:38:33 ~/.config/zsh 0:00:06
 main »
 ```
 
 Which is:
 
-```
+```txt
 time current-working-directory previous-command-execution-time
 [screen]-[git-repo-branch] [ssh-user@host]»
 ```
@@ -170,7 +170,7 @@ time current-working-directory previous-command-execution-time
 With things in `[]` only showing if they have a valid value,
 and `[ssh-user@host]»` changing color based on if the previous command exited with `0`
 
-```
+```zsh
 #!/usr/bin/env zsh
 
 export PROMPT_EOL_MARK=''

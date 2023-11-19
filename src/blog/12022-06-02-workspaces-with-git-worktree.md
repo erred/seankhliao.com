@@ -12,7 +12,7 @@ searching for references to things.
 It also meant a slightly lower barrier to entry in jumping in to help people.
 On disk this looked something like:
 
-```
+```txt
 .
 └── github
    ├── repo-1
@@ -39,7 +39,7 @@ Inspired by my brief experiments with [svn](https://subversion.apache.org/),
 and my discovery of [git worktree](https://git-scm.com/docs/git-worktree),
 my current code layout looks like:
 
-```
+```txt
 .
 └── github
    ├── repo-1
