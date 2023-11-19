@@ -6,7 +6,7 @@ Well I don't know,
 I'll let you decide who you think I am.
 In the flesh liveness probes over the coffee protocol
 may be possible if you're in London, UK,
-[contact for details](mailto:sean+coffee@liao.dev).
+[contact for details](mailto:sean+coffee@liao.dev?subject=coffee://).
 
 ##### _Around_ the Internet
 
