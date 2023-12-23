@@ -37,7 +37,7 @@ firebase: {
 		["/w-s-liadev", "/?utm_campaign=liadev\u0026utm_medium=site\u0026utm_source=web"],
 		["/yt-p-s", "/?utm_campaign=seankhliao\u0026utm_medium=profile\u0026utm_source=youtube"],
 	]
-	redirects: [ for _red in _redirects {
+	redirects: [for _red in _redirects {
 		code:     307
 		glob:     _red[0]
 		location: _red[1]
