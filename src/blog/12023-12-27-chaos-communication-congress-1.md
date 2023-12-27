@@ -93,3 +93,7 @@ Text protocols bad and the endless lf/cr debates are bad.
 Binary data all the things
 
 ##### Sucking dust and cutting grass: reversing robots and bypassing security
+
+So this is why they say iot devices are insecure.
+Though i did have to keep reminding myself of the motivations
+as some of the attacks were a bit... so what? if it's local only.
