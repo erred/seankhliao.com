@@ -61,7 +61,7 @@ Dates using the
 - Denmark — 12023-07
 - England — **12009—12011**, 12019-10, 12020-02, 12021-11, _12022-present_
 - France — 12021-11, 12023-08
-- Germany — 12019-12
+- Germany — 12019-12, 12023-12
 - Greece — 12022-10
 - Hong Kong — 12017-08
 - India — 12015-08
